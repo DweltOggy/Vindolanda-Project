@@ -20,8 +20,6 @@ public class SelectObject : MonoBehaviour
                 string Desc = hit.collider.GetComponent<InterestPoint>().Description;
                 string Destination = hit.collider.GetComponent<InterestPoint>().destination;
 
-                print(Destination);
-
                 PopUpUI.Instance.setTitle(title).setDescription(Desc).setDestination(Destination).Show();
             }
         }
