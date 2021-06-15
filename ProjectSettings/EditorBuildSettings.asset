@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScene.unity
     guid: fa07706ff595f174d8e59ee4ab41350f
   - enabled: 1
+    path: Assets/Scenes/Dice.unity
+    guid: 5f367215a9c7c6e47ac64a54c9ca69fc
+  - enabled: 1
     path: Assets/Scenes/Shrine.unity
     guid: 4bfddbc459998844a835152c5e0a7810
   m_configObjects: {}

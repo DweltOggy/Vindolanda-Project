@@ -5,12 +5,24 @@ using objectives;
 
 public class ObjectiveTest : Objective
 {
+    public float countdown = 5.0f;
+    public string info = "Visit the Shrine";
+    private void Update()
+    {
+        countdown -= Time.deltaTime;
+    }
+
     public override bool Achieved()
     {
-        return false;
+        return (countdown < 0);
     }
     public override string message()
     {
-        return ("Visit the Shrine");
+        return (info);
+    }
+
+    public override void complete()
+    {
+        GameController.Instance.money += 100;
     }
 }
