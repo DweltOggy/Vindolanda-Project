@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class dontDestroy : MonoBehaviour
+public class dontDestroyQuests : MonoBehaviour
 {
-    private static dontDestroy Instance = null;
+    private static dontDestroyQuests Instance = null;
 
     void Awake()
     {
@@ -12,7 +12,7 @@ public class dontDestroy : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        else 
+        else
         {
             Instance = this;
         }

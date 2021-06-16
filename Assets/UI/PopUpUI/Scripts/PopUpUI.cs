@@ -32,12 +32,21 @@ namespace EasyUI.PopUps
 
         void Awake()
         {
-            Instance = this;
+            if (Instance != null && Instance != this)
+            {
+                Destroy(this.gameObject);
+            }
+            else
+            {
+                Instance = this;
+            }
+
             closeUIButton.onClick.RemoveAllListeners();
             closeUIButton.onClick.AddListener(Hide);
 
             travelUIButton.onClick.RemoveAllListeners();
             travelUIButton.onClick.AddListener(changeScene);
+            travelUIButton.onClick.AddListener(Hide);
         }
 
         public PopUpUI setTitle(string title)
