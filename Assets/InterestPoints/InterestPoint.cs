@@ -39,7 +39,8 @@ public class InterestPoint : MonoBehaviour
     }
     // Update is called once per frame
     void Update()
-    {
-        namePlate.transform.LookAt(Camera.main.transform);
+    { 
+        //namePlate.transform.rotation = transform.rotation * new Quaternion(0, 180, 0, 0);
+        namePlate.transform.LookAt(2 * transform.position - Camera.main.transform.position);
     }
 }

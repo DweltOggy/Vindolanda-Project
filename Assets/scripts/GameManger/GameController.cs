@@ -23,7 +23,7 @@ namespace objectives
         public static GameController Instance;
 
         public List <Objective> objectives = new List<Objective>();
-        public List<item> inventory = new List<item>();
+        public List <item> inventory = new List<item>();
         public int money = 1000;
 
         public Text value;
@@ -31,10 +31,19 @@ namespace objectives
 
         void Awake()
         {
-            Instance = this;
-            objectives.AddRange(GetComponents<Objective>());
+            if (Instance == null)
+            {
+                Instance = this;           
+                //objectives.AddRange(GameObject.FindObjectsOfType<Objective>());
+            }
 
-            DontDestroyOnLoad(gameObject);
+            else if (Instance != this)
+            {
+                Destroy(this.gameObject);
+            }
+
+            objectives.AddRange(GameObject.FindObjectsOfType<Objective>());
+            DontDestroyOnLoad(this.gameObject);
         }
 
         void OnGUI()
@@ -45,17 +54,18 @@ namespace objectives
                 if(!value.text.Contains(message))
                     value.text +="- " + message + "\n";
             }
-            displayMoney.text = "Money: " + money;
+
+           displayMoney.text = "Money: " + money;
         }
 
         void Update()
         {
+            
             foreach (var objective in objectives)
             {
                 if (objective.Achieved())
                 {
                     objective.complete();
-                    //objectives.Remove(objective);
                     Destroy(objective);
                     value.text = " ";
                 }
@@ -74,6 +84,15 @@ namespace objectives
             entry.name = name;
             entry.description = desc;
             inventory.Add(entry);
+        }
+
+        public bool checkInventory(string name)
+        {
+            foreach (var entry in inventory)
+                if(entry.name == name)
+                    return true;
+           
+                return false;
         }
 
     }
