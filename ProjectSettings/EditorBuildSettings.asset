@@ -6,33 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MapScene.unity
+    path: Assets/Scenes/Main Scenes/MapScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/Test1.unity
-    guid: 93e41f87646ecfd47b78c0e5fb3cdb7d
-  - enabled: 1
-    path: Assets/Scenes/Test2.unity
-    guid: f6697731d9f41574ab7f968bd91e9f10
-  - enabled: 1
-    path: Assets/Scenes/Encyclopedia.unity
+    path: Assets/Scenes/Other/Encyclopedia.unity
     guid: f17b68d6d23705a449b6c6d755a17646
   - enabled: 1
-    path: Assets/Scenes/Barracks.unity
+    path: Assets/Scenes/Main Scenes/Barracks.unity
     guid: 8ab46f2a11495d14a972c7560a02236f
   - enabled: 1
-    path: Assets/Scenes/BathHouse.unity
+    path: Assets/Scenes/Main Scenes/BathHouse.unity
     guid: bf469c6f6cc9f6543aaf0b4db93f4f51
-  - enabled: 1
-    path: Assets/Scenes/Market.unity
-    guid: d8bcbbda1511a04459c86b92a321263e
   - enabled: 1
     path: Assets/Scenes/StartScene.unity
     guid: fa07706ff595f174d8e59ee4ab41350f
   - enabled: 1
-    path: Assets/Scenes/Dice.unity
+    path: Assets/Scenes/Mini Games/Dice.unity
     guid: 5f367215a9c7c6e47ac64a54c9ca69fc
   - enabled: 1
-    path: Assets/Scenes/Shrine.unity
+    path: Assets/Scenes/Main Scenes/Tavern.unity
+    guid: fd8a296c55a9b144cae9c6e42e00ddc1
+  - enabled: 1
+    path: Assets/Scenes/Main Scenes/Shrine.unity
     guid: 4bfddbc459998844a835152c5e0a7810
   m_configObjects: {}
