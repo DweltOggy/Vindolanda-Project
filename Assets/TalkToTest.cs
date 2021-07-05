@@ -25,6 +25,7 @@ public class TalkToTest : Objective
 
     public override void complete()
     {
+        
         GameController.Instance.money += reward;
     }
 }

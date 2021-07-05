@@ -2670,7 +2670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   info: Talk to the Bar Keeper
-  reward: 100
+  reward: 5
 --- !u!1001 &325839047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16772,7 +16772,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.005589563, y: 0.07381365}
   m_AnchorMax: {x: 0.18200001, y: 0.607218}
-  m_AnchoredPosition: {x: 58.809387, y: -1.3620911}
+  m_AnchoredPosition: {x: 58.809326, y: -1.3620911}
   m_SizeDelta: {x: 112.9021, y: -7.3558}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1595821999
@@ -21733,13 +21733,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6912796433330483418, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
+      propertyPath: reward
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1934207458220869129, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
       propertyPath: info
       value: Wait...
       objectReference: {fileID: 0}
     - target: {fileID: 1934207458220869129, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
       propertyPath: countdown
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8108925834441127934, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
       propertyPath: m_Name
@@ -22006,6 +22010,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 8641675577165391376, guid: 35614b754f458a14eba659da175d5fc2, type: 3}
+      propertyPath: money
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641675577165391376, guid: 35614b754f458a14eba659da175d5fc2, type: 3}
       propertyPath: value
       value: 
       objectReference: {fileID: 1595282126}
@@ -22063,3 +22071,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35614b754f458a14eba659da175d5fc2, type: 3}
+--- !u!1 &8641675576170836373 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8641675577165391382, guid: 35614b754f458a14eba659da175d5fc2, type: 3}
+  m_PrefabInstance: {fileID: 8641675576170836372}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8641675576170836374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8641675576170836373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db7b298ddd218346a9cc6bba7fcce55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

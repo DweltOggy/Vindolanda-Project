@@ -24,7 +24,7 @@ namespace objectives
 
         public List <Objective> objectives = new List<Objective>();
         public List <item> inventory = new List<item>();
-        public int money = 1000;
+        public int money = 30;
 
         public Text value;
         public Text displayMoney;
@@ -33,8 +33,7 @@ namespace objectives
         {
             if (Instance == null)
             {
-                Instance = this;           
-                //objectives.AddRange(GameObject.FindObjectsOfType<Objective>());
+                Instance = this;         
             }
 
             else if (Instance != this)
@@ -80,10 +79,13 @@ namespace objectives
 
         public void addItem(string name, string desc)
         {
-            item entry;
-            entry.name = name;
-            entry.description = desc;
-            inventory.Add(entry);
+            if(!checkInventory(name))
+            {
+                item entry;
+                entry.name = name;
+                entry.description = desc;
+                inventory.Add(entry);
+            }
         }
 
         public bool checkInventory(string name)

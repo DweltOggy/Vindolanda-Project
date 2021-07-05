@@ -12,8 +12,8 @@ public class ReturnTOMap : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if(canExit && Input.GetKeyDown(KeyCode.E))
-            SceneManager.LoadScene("MapScene");
+        if (canExit && Input.GetKeyDown(KeyCode.E))
+            returnToMap();
     }
 
     void OnTriggerEnter(Collider other)
@@ -23,9 +23,14 @@ public class ReturnTOMap : MonoBehaviour
         
     }
 
-    private void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider other)
     {
         if (other.tag == "Player")
             canExit = false;
+    }
+
+    void returnToMap()
+    {
+        SceneManager.LoadScene("MapScene");
     }
 }

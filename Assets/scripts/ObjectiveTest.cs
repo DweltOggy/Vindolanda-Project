@@ -28,6 +28,7 @@ public class ObjectiveTest : Objective
 
     public override void complete()
     {
-        GameController.Instance.money += 100;
+        print("adding money for : " + info);
+        GameController.Instance.money += 10;
     }
 }
