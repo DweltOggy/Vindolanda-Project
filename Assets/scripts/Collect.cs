@@ -9,14 +9,26 @@ public class Collect : MonoBehaviour
 
     public string title = "name";
     public string desc = "Test Description";
+    public string objectID;
+
+    private void Start()
+    {
+        objectID = name + transform.position.ToString() + transform.eulerAngles.ToString();
+
+        if(GameController.Instance.checkInventory(objectID))
+        {
+            Destroy(gameObject);
+        }
+    }
 
     // Update is called once per frame
     void Update()
     {
         if (inProximity && Input.GetKeyDown(KeyCode.E))
         {
-            GameController.Instance.addItem(title, desc);
-            Destroy(gameObject);
+            GameController.Instance.addItem(title, desc, objectID);
+            //Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 

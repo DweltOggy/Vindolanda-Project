@@ -13,6 +13,7 @@ public class DialogueManger : MonoBehaviour
     private Queue<string> sentances;
 
     public string currentNPC = " ";
+    public bool inDialogue = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +30,7 @@ public class DialogueManger : MonoBehaviour
         FindObjectOfType<MouseLook>().MouseEnabled = false;
         FindObjectOfType<PlayerMovement>().MovementEnabled = false;
 
+        inDialogue = true;
         nameText.text = dialogue.name;
         currentNPC = dialogue.name;
 
@@ -44,7 +46,8 @@ public class DialogueManger : MonoBehaviour
     public void DisplayNextSentance()
     {
         if(sentances.Count == 0)
-        {
+        { 
+            inDialogue = false;
             endDialogue();
             return;
         }
@@ -60,7 +63,7 @@ public class DialogueManger : MonoBehaviour
 
         FindObjectOfType<MouseLook>().MouseEnabled = true;
         FindObjectOfType<PlayerMovement>().MovementEnabled = true;
-
+       
         currentNPC = " ";
 
         animator.SetBool("isOpen", false);

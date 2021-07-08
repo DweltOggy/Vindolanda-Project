@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Interest
+  - TavernPatron
+  - ShrineQuest
+  - BarracksQuest
   layers:
   - Default
   - TransparentFX

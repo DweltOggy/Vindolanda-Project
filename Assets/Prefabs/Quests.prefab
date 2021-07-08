@@ -9,8 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8629278272718153437}
-  - component: {fileID: -6912796433330483418}
-  - component: {fileID: 1934207458220869129}
   m_Layer: 0
   m_Name: Quests
   m_TagString: Untagged
@@ -32,31 +30,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-6912796433330483418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8108925834441127934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11ed4c0c5e2005443a3a840da31be485, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  info: Find the Helmet
-  reward: 100
---- !u!114 &1934207458220869129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8108925834441127934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20a48b622dc0a2144b4f21054396db67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countdown: 40
-  info: Visit the Shrine

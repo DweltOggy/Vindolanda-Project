@@ -6,7 +6,6 @@ using objectives;
 public class NPC : MonoBehaviour
 {
     public Dialogue dialogue;
-
     public Dialogue altDialogue;
 
     bool inProximity = false;
@@ -42,5 +41,15 @@ public class NPC : MonoBehaviour
             altDialogue.name = dialogue.name;
             dialogue = altDialogue;
         }
+    }
+
+    public void setDialogue(Dialogue newDiag)
+    {
+        print("Setting Dialogue");
+        dialogue = newDiag;
+    }
+    public void setAltDialogue(Dialogue newDiag)
+    {
+        altDialogue = newDiag;
     }
 }

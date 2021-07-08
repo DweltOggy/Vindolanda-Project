@@ -2640,37 +2640,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4517966287165172, guid: 89c2cb74f1067421c89a1ee83b2ae77e, type: 3}
   m_PrefabInstance: {fileID: 753306104}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &324741521 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8108925834441127934, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
-  m_PrefabInstance: {fileID: 3075215984349005957}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &324741525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 324741521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2322d3ba8a4c9c14a83711b77144064f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &324741526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 324741521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf9be71efe6f47749b8a1a769043d4bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  info: Talk to the Bar Keeper
-  reward: 5
 --- !u!1001 &325839047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10151,6 +10120,80 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 550806a894e20ec4cb17e351e62c221f, type: 3}
+--- !u!1 &1034747599 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8108925834441127934, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
+  m_PrefabInstance: {fileID: 1072881921}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1034747600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034747599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e20c3a37f973cc4fb9c36a6059d85f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tavernDialogue1:
+    name: Tavern Patron
+    sentances:
+    - Hello Whats this?
+    - Oh thank you! The priestess said she'd send this to me!
+  tavernDialogue2:
+    name: Tavern Patron
+    sentances:
+    - Thank you so much!
+  quest3Dialogue1:
+    name: Livia Pola
+    sentances:
+    - Thank you for delivering the pendant!
+    - Could you also deliver this Artifact to the Bath House patron as well?
+  quest3Dialogue2:
+    name: Livia Pola
+    sentances:
+    - It would be great if you culd take that artifact to the Bath house Patron!
+  quest4Dialogue1:
+    name: Bath House Patron
+    sentances:
+    - Oh htank you it's too kind of you to bring i that to me! Tell Livia thank you!
+  quest4Dialogue2:
+    name: Bath Housee Patron
+    sentances:
+    - Thank you!
+  quest5Dialogue1:
+    name: Livia Pola
+    sentances:
+    - Thank you Lepidna! You have the kindness of the gods. Here is your reward!
+      I hope you have a good time at the party!
+  quest5Dialogue2:
+    name: Blessings of the gods!
+    sentances: []
+  BarracksDialogue3:
+    name: Gaius Marinus
+    sentances:
+    - Thatnk you! Yous saved me there... This is embarrassing but I also lost my
+      bow...
+    - Bring it back to me and I'll give you some of my pay... I thinks it's either
+      in the bath house or shrine...
+  BarracksDialogue4:
+    name: Gaius Marinus
+    sentances:
+    - You'd be helping me out a ton getting my bow...
+--- !u!114 &1034747601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034747599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2322d3ba8a4c9c14a83711b77144064f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1035583935 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4685142851389504, guid: a79dfd9d0bb69744fa807ad7e4ded57e, type: 3}
@@ -10357,6 +10400,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2aa46dbf6eefc44a9905b8dc71fd5f7a, type: 3}
+--- !u!1001 &1072881921
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8108925834441127934, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
+      propertyPath: m_Name
+      value: Quests
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629278272718153437, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629278272718153437, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.9607625
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629278272718153437, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1301223
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629278272718153437, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.1919689
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629278272718153437, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629278272718153437, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629278272718153437, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629278272718153437, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629278272718153437, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629278272718153437, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629278272718153437, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
 --- !u!4 &1074009416 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2729007630264582308, guid: e8fc41027142b0844a9b7cd8e7ad3924, type: 3}
@@ -19630,6 +19730,7 @@ MonoBehaviour:
   dialogueText: {fileID: 1007787443}
   animator: {fileID: 45463376}
   currentNPC: ' '
+  inDialogue: 0
 --- !u!1001 &1922188353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21726,75 +21827,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3911a3ce3ded74ffc9f5d2e575ea0977, type: 3}
---- !u!1001 &3075215984349005957
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -6912796433330483418, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
-      propertyPath: reward
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1934207458220869129, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
-      propertyPath: info
-      value: Wait...
-      objectReference: {fileID: 0}
-    - target: {fileID: 1934207458220869129, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
-      propertyPath: countdown
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8108925834441127934, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
-      propertyPath: m_Name
-      value: Quests
-      objectReference: {fileID: 0}
-    - target: {fileID: 8629278272718153437, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8629278272718153437, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.9607625
-      objectReference: {fileID: 0}
-    - target: {fileID: 8629278272718153437, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.1301223
-      objectReference: {fileID: 0}
-    - target: {fileID: 8629278272718153437, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.1919689
-      objectReference: {fileID: 0}
-    - target: {fileID: 8629278272718153437, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8629278272718153437, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8629278272718153437, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8629278272718153437, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8629278272718153437, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8629278272718153437, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8629278272718153437, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 76292d471ff9c0f4891ed474744b6322, type: 3}
 --- !u!1001 &3405681504152559744
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22027,7 +22059,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8641675577165391383, guid: 35614b754f458a14eba659da175d5fc2, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8641675577165391383, guid: 35614b754f458a14eba659da175d5fc2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22088,3 +22120,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db7b298ddd218346a9cc6bba7fcce55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8641675576170836375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8641675576170836373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a42f0e3a7ef51e44696215750d7d9c99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info: Talk to Livia Pola in the Temple
+  reward: 2
+--- !u!114 &8641675576170836378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8641675576170836373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e312950d4d975ab40badba85a470a45e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info: Talk to Gaius Marinus in the Barracks
+  reward: 2

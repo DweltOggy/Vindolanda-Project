@@ -24,6 +24,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Mini Games/Dice.unity
     guid: 5f367215a9c7c6e47ac64a54c9ca69fc
   - enabled: 1
+    path: Assets/Scenes/Mini Games/NumeralMatcher.unity
+    guid: 5029ae4143068684b83738b8dbb3662c
+  - enabled: 1
+    path: Assets/Scenes/Mini Games/Match3Game.unity
+    guid: 8c480074668ff934794b7f6c59f040a9
+  - enabled: 1
     path: Assets/Scenes/Main Scenes/Tavern.unity
     guid: fd8a296c55a9b144cae9c6e42e00ddc1
   - enabled: 1

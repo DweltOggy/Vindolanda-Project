@@ -16,6 +16,7 @@ namespace objectives
     {
         public string name;
         public string description;
+        public string objID;
     }
 
     public class GameController : MonoBehaviour
@@ -59,7 +60,6 @@ namespace objectives
 
         void Update()
         {
-            
             foreach (var objective in objectives)
             {
                 if (objective.Achieved())
@@ -70,31 +70,43 @@ namespace objectives
                 }
             }
 
-            for (var i = objectives.Count - 1; i > -1; i--)
-            {
-                if (objectives[i] == null)
-                    objectives.RemoveAt(i);
-            }
+            refresh();
         }
 
-        public void addItem(string name, string desc)
+        public void refresh()
+        {
+            objectives.Clear();
+            objectives.AddRange(GameObject.FindObjectsOfType<Objective>());
+        }
+
+        public void addItem(string name, string desc, string ID)
         {
             if(!checkInventory(name))
             {
                 item entry;
                 entry.name = name;
                 entry.description = desc;
+                entry.objID = ID;
                 inventory.Add(entry);
             }
         }
 
-        public bool checkInventory(string name)
+        public bool checkInventory(string Id)
         {
             foreach (var entry in inventory)
-                if(entry.name == name)
+                if(entry.objID == Id)
                     return true;
            
                 return false;
+        }
+
+        public bool checkInventoryName(string name)
+        {
+            foreach (var entry in inventory)
+                if (entry.name == name)
+                    return true;
+
+            return false;
         }
 
     }

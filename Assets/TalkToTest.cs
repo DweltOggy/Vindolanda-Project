@@ -8,7 +8,7 @@ public class TalkToTest : Objective
     public int reward = 100;
     public void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
+       
     }
     public override bool Achieved()
     {
@@ -25,7 +25,6 @@ public class TalkToTest : Objective
 
     public override void complete()
     {
-        
         GameController.Instance.money += reward;
     }
 }
