@@ -79,22 +79,39 @@ namespace knowledge
                         "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST" +
                         "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST"),
 
-            new entry(3, "Temple",
+            new entry(3, "Market",
                         "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST" +
                         "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST" +
                         "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST"),
 
-            new entry(4, "Barracks",
+            new entry(4, "Tavern",
                         "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST" +
                         "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST" +
                         "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST"),
 
-            new entry(5, "Barracks",
+            new entry(5, "Temple",
+                        "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST" +
+                        "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST" +
+                        "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST"),
+
+            new entry(6, "Helmet",
                         "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST" +
                         "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST" +
                         "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST")
             };
 
+        }
+
+        public float percentageComplete() 
+        {
+            float completed = 0;
+            foreach (var entry in enteries)
+            {
+                if (entry.locked == false)
+                    completed++;
+            }
+
+            return Mathf.Round((completed / enteries.Count) * 100);
         }
 
     }

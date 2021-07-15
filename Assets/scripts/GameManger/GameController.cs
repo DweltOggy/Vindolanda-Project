@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using knowledge;
 
 namespace objectives
 {
@@ -29,6 +30,9 @@ namespace objectives
 
         public Text value;
         public Text displayMoney;
+        public Text percentage;
+
+        public bool disableMouseClick= false;
 
         void Awake()
         {
@@ -56,6 +60,7 @@ namespace objectives
             }
 
            displayMoney.text = "Money: " + money;
+            percentage.text = "Journal (J) \n" + Encyclopedia.Instance.percentageComplete() + "%";
         }
 
         void Update()
@@ -69,6 +74,8 @@ namespace objectives
                     value.text = " ";
                 }
             }
+
+            
 
             refresh();
         }

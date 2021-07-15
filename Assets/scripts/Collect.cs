@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using objectives;
+using knowledge;
 
 public class Collect : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class Collect : MonoBehaviour
 
     public string title = "name";
     public string desc = "Test Description";
+    public int databaseEntery = 6;
+
     public string objectID;
 
     private void Start()
@@ -26,6 +29,9 @@ public class Collect : MonoBehaviour
     {
         if (inProximity && Input.GetKeyDown(KeyCode.E))
         {
+            Encyclopedia.Instance.unlockEntry(databaseEntery);
+            FindObjectOfType<EcycloUIManager>().updateUI();
+
             GameController.Instance.addItem(title, desc, objectID);
             //Destroy(gameObject);
             gameObject.SetActive(false);
