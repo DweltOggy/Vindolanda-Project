@@ -25,12 +25,12 @@ public class EcycloUIManager : MonoBehaviour
     void Update()
     {
 
-        if (active && Input.GetKeyDown(KeyCode.O))
+        if (active && Input.GetKeyDown(KeyCode.J))
         {
             active = false;
             Hide();
         }
-        else if (!active && Input.GetKeyDown(KeyCode.O))
+        else if (!active && Input.GetKeyDown(KeyCode.J))
         {
             active = true;
             Show();
@@ -73,8 +73,8 @@ public class EcycloUIManager : MonoBehaviour
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
-        FindObjectOfType<MouseLook>().MouseEnabled = false;
-        FindObjectOfType<PlayerMovement>().MovementEnabled = false;
+        //FindObjectOfType<MouseLook>().MouseEnabled = false;
+        //FindObjectOfType<PlayerMovement>().MovementEnabled = false;
 
         MainCanvas.SetActive(true);
     }
@@ -90,8 +90,8 @@ public class EcycloUIManager : MonoBehaviour
 
            
 
-        FindObjectOfType<MouseLook>().MouseEnabled = true;
-        FindObjectOfType<PlayerMovement>().MovementEnabled = true;
+        //FindObjectOfType<MouseLook>().MouseEnabled = true;
+        //FindObjectOfType<PlayerMovement>().MovementEnabled = true;
 
         MainCanvas.SetActive(false);
     }

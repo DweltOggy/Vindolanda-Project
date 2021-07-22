@@ -45,7 +45,6 @@ public class NPC : MonoBehaviour
 
     public void setDialogue(Dialogue newDiag)
     {
-        print("Setting Dialogue");
         dialogue = newDiag;
     }
     public void setAltDialogue(Dialogue newDiag)

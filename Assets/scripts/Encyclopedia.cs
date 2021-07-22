@@ -5,35 +5,12 @@ using UnityEngine;
 
 namespace knowledge
 {
-    public class entry
-    {
-        public int id;
-        public bool locked;
-        public string name;
-        public string description;
-        //public Sprite image;
-
-        public entry(int id, string name, string desc)
-        {
-            locked = true;
-            this.id = id;
-            this.name = name;
-            this.description = desc;
-        }
-
-        public void unlock()
-        {
-            locked = false;
-        }
-
-    }
-
+   
     public class Encyclopedia : MonoBehaviour
     {
         public static Encyclopedia Instance;
 
-        [SerializeField] public List<entry> enteries = new List<entry>();
-
+        [SerializeField] public List<entry> enteries;// = new List<entry>();
 
         private void Awake()
         {
@@ -47,8 +24,14 @@ namespace knowledge
                 Destroy(this.gameObject);
             }
 
-            createDataBase();
             DontDestroyOnLoad(this.gameObject);
+        }
+        private void OnApplicationQuit()
+        {
+            foreach (var entry in enteries)
+            {
+                entry.lockEntry();
+            }
         }
 
         public void unlockEntry(int id)
@@ -59,47 +42,6 @@ namespace knowledge
         public void unlockEntry(string itemName)
         {
             enteries.Find(entry => entry.name == itemName).unlock();
-        }
-
-        void createDataBase()
-        {
-            enteries = new List<entry>() { 
-            new entry(0, "Vindolanda",
-                        "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST" +
-                        "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST" +
-                        "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST"),
-
-            new entry(1, "Bath House",
-                        "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST" +
-                        "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST" +
-                        "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST"),
-
-            new entry(2, "Barracks",
-                        "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST" +
-                        "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST" +
-                        "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST"),
-
-            new entry(3, "Market",
-                        "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST" +
-                        "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST" +
-                        "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST"),
-
-            new entry(4, "Tavern",
-                        "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST" +
-                        "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST" +
-                        "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST"),
-
-            new entry(5, "Temple",
-                        "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST" +
-                        "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST" +
-                        "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST"),
-
-            new entry(6, "Helmet",
-                        "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST" +
-                        "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST" +
-                        "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST")
-            };
-
         }
 
         public float percentageComplete() 

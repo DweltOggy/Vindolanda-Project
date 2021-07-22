@@ -6,13 +6,6 @@ using knowledge;
 
 namespace objectives
 {
-    public abstract class Objective : MonoBehaviour
-    {
-        public abstract bool Achieved();
-        public abstract string message();
-        public abstract void complete();
-    }
-
     public struct item
     {
         public string name;
@@ -74,9 +67,6 @@ namespace objectives
                     value.text = " ";
                 }
             }
-
-            
-
             refresh();
         }
 
