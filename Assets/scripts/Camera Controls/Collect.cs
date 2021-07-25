@@ -7,33 +7,28 @@ using knowledge;
 public class Collect : MonoBehaviour
 {
     bool inProximity = false;
-
-    public string title = "name";
-    public string desc = "Test Description";
-    public int databaseEntery = 6;
-
-    public string objectID;
+    public itemObject item;
 
     private void Start()
     {
-        objectID = name + transform.position.ToString() + transform.eulerAngles.ToString();
+        if(item.objID == "REPLACE")
+            item.objID = name + transform.position.ToString() + transform.eulerAngles.ToString();
 
-        if(GameController.Instance.checkInventory(objectID))
+        if(GameController.Instance.playerInventory.checkInventory(item.objID))
         {
             Destroy(gameObject);
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (inProximity && Input.GetKeyDown(KeyCode.E))
         {
-            Encyclopedia.Instance.unlockEntry(databaseEntery);
+            Encyclopedia.Instance.unlockEntry(item.databaseEntry);
             FindObjectOfType<EcycloUIManager>().updateUI();
 
-            GameController.Instance.addItem(title, desc, objectID);
-            //Destroy(gameObject);
+            if(item)
+                GameController.Instance.addItem(item);
             gameObject.SetActive(false);
         }
     }
@@ -41,9 +36,7 @@ public class Collect : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
-        {
             inProximity = true;
-        }
     }
 
     private void OnTriggerExit(Collider other)

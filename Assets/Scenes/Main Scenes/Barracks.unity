@@ -2359,6 +2359,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8599476667401371863, guid: 7d94598a1ec9fe046a5298dff7464aa0, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 087c19da2f2f24047a74f45bf04e8c0c, type: 2}
     - target: {fileID: 8599476667401372456, guid: 7d94598a1ec9fe046a5298dff7464aa0, type: 3}
       propertyPath: m_Name
       value: Interacatble Object (1)
@@ -5990,6 +5994,10 @@ PrefabInstance:
       propertyPath: desc
       value: Hardy Roman rope!
       objectReference: {fileID: 0}
+    - target: {fileID: 8599476667401371863, guid: 7d94598a1ec9fe046a5298dff7464aa0, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 18ed3f39f06bb8d4da950be6d9150449, type: 2}
     - target: {fileID: 8599476667401371863, guid: 7d94598a1ec9fe046a5298dff7464aa0, type: 3}
       propertyPath: title
       value: Rope

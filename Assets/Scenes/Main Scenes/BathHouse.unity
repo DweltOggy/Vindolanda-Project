@@ -2649,6 +2649,10 @@ PrefabInstance:
       value: An ornate roman vase!
       objectReference: {fileID: 0}
     - target: {fileID: 8599476667401371863, guid: 7d94598a1ec9fe046a5298dff7464aa0, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: f9063a264b078324aad6951dd7c3a1fb, type: 2}
+    - target: {fileID: 8599476667401371863, guid: 7d94598a1ec9fe046a5298dff7464aa0, type: 3}
       propertyPath: title
       value: Roman Vase
       objectReference: {fileID: 0}
@@ -10194,6 +10198,10 @@ PrefabInstance:
       propertyPath: desc
       value: It's a bucket full of water!
       objectReference: {fileID: 0}
+    - target: {fileID: 8599476667401371863, guid: 7d94598a1ec9fe046a5298dff7464aa0, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: bfc007289ea01ce4491d407ff708e1c8, type: 2}
     - target: {fileID: 8599476667401371863, guid: 7d94598a1ec9fe046a5298dff7464aa0, type: 3}
       propertyPath: title
       value: Bucket

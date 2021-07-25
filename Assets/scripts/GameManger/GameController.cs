@@ -18,14 +18,14 @@ namespace objectives
         public static GameController Instance;
 
         public List <Objective> objectives = new List<Objective>();
-        public List <item> inventory = new List<item>();
+        //public List <item> inventory = new List<item>();
+
+        public Inventory playerInventory;
         public int money = 30;
 
         public Text value;
         public Text displayMoney;
         public Text percentage;
-
-        public bool disableMouseClick= false;
 
         void Awake()
         {
@@ -76,34 +76,9 @@ namespace objectives
             objectives.AddRange(GameObject.FindObjectsOfType<Objective>());
         }
 
-        public void addItem(string name, string desc, string ID)
+        public void addItem(itemObject newItem)
         {
-            if(!checkInventory(name))
-            {
-                item entry;
-                entry.name = name;
-                entry.description = desc;
-                entry.objID = ID;
-                inventory.Add(entry);
-            }
-        }
-
-        public bool checkInventory(string Id)
-        {
-            foreach (var entry in inventory)
-                if(entry.objID == Id)
-                    return true;
-           
-                return false;
-        }
-
-        public bool checkInventoryName(string name)
-        {
-            foreach (var entry in inventory)
-                if (entry.name == name)
-                    return true;
-
-            return false;
+            playerInventory.addItem(newItem);
         }
 
     }

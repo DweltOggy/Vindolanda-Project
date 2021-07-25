@@ -1041,6 +1041,10 @@ PrefabInstance:
       value: A child must have left their toy at the temple!
       objectReference: {fileID: 0}
     - target: {fileID: 8599476667401371863, guid: 7d94598a1ec9fe046a5298dff7464aa0, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 0da001c25ff504742a777245a572be28, type: 2}
+    - target: {fileID: 8599476667401371863, guid: 7d94598a1ec9fe046a5298dff7464aa0, type: 3}
       propertyPath: title
       value: Toy Boat
       objectReference: {fileID: 0}
@@ -2850,6 +2854,10 @@ PrefabInstance:
       propertyPath: desc
       value: It's a roman used for hunting more than combat!
       objectReference: {fileID: 0}
+    - target: {fileID: 8599476667401371863, guid: 7d94598a1ec9fe046a5298dff7464aa0, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: f09caf680dd0e4f4b838f5263d222eda, type: 2}
     - target: {fileID: 8599476667401371863, guid: 7d94598a1ec9fe046a5298dff7464aa0, type: 3}
       propertyPath: title
       value: Bow

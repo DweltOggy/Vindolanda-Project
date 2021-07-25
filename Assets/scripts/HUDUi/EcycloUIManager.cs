@@ -13,11 +13,33 @@ public class EcycloUIManager : MonoBehaviour
 
     [SerializeField] GameObject EntryLayout;
 
+    [SerializeField] GameObject ExpandLayout;
+
+
+
+    List<GameObject> uiElemants;
 
     bool active = false;
     // Start is called before the first frame update
     void Start()
     {
+        int loopcounter = 0;
+        foreach (var entry in Encyclopedia.Instance.enteries)
+        {
+            Vector3 offset = new Vector3(0, -320, 0);
+            GameObject UIElemant;
+
+            UIElemant = Instantiate(EntryLayout, new Vector3(0, 0, 0) + (offset * loopcounter++), Quaternion.identity) as GameObject;
+            UIElemant.transform.SetParent(Parent.transform, false);
+            UIElemant.AddComponent<access>();
+            UIElemant.GetComponent<access>().info = entry;
+
+            Button buttonElemant = UIElemant.GetComponentInChildren<Button>();
+            buttonElemant.onClick.RemoveAllListeners();
+            buttonElemant.onClick.AddListener(() => expand(buttonElemant));
+
+            uiElemants.Add(UIElemant);
+        }
         updateUI();
     }
 
@@ -39,33 +61,22 @@ public class EcycloUIManager : MonoBehaviour
 
     public void updateUI()
     {
-        for(int i = 0; i < Parent.transform.childCount; i++)
+        foreach (var elemant in uiElemants)
         {
-            Destroy(Parent.transform.GetChild(i).gameObject);
-        }
-
-
-        int loopcounter = 0;
-
-
-      foreach (var entry in Encyclopedia.Instance.enteries)
-        {
-            Vector3 offset = new Vector3(0, -320, 0);
-            GameObject UIElemant;
-            UIElemant = Instantiate(EntryLayout, new Vector3(0, 0, 0) + (offset * loopcounter++), Quaternion.identity) as GameObject;
-
-            UIElemant.transform.SetParent(Parent.transform,false);
-            // UIElemant.getComponent
-            Text test = UIElemant.GetComponentInChildren<Text>();
-            if (entry.locked == true && test)
+            Text test = elemant.GetComponentInChildren<Text>();
+            Button buttonElemant = elemant.GetComponentInChildren<Button>();
+            
+            if (elemant.GetComponent<access>().info.locked == true && test)
             {
-              test.text = "LOCKED";
+                test.text = "LOCKED";
+                buttonElemant.GetComponent<Image>().color = Color.black;
             }
             else
             {
-                test.text = entry.name + "\n" + entry.description;
+                test.text = (elemant.GetComponent<access>().info.name + "\n" 
+                            + (elemant.GetComponent<access>().info.description));
+                buttonElemant.GetComponent<Image>().color = Color.white;
             }
-
         }
     }
 
@@ -75,7 +86,6 @@ public class EcycloUIManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Confined;
         //FindObjectOfType<MouseLook>().MouseEnabled = false;
         //FindObjectOfType<PlayerMovement>().MovementEnabled = false;
-
         MainCanvas.SetActive(true);
     }
 
@@ -87,13 +97,15 @@ public class EcycloUIManager : MonoBehaviour
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
         }
-
-           
-
         //FindObjectOfType<MouseLook>().MouseEnabled = true;
         //FindObjectOfType<PlayerMovement>().MovementEnabled = true;
 
         MainCanvas.SetActive(false);
+    }
+
+    public void expand(Button button)
+    {
+        ExpandLayout.SetActive(true);
     }
 
 }

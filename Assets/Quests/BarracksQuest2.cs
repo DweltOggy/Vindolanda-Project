@@ -11,7 +11,7 @@ public class BarracksQuest2 : Objective
 
     public override bool Achieved()
     {
-        return GameController.Instance.checkInventoryName("Helmet");
+        return GameController.Instance.playerInventory.checkInventory("Quest_Helmet");
     }
     public override string message()
     {

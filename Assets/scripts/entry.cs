@@ -8,11 +8,17 @@ namespace knowledge
     public class entry : ScriptableObject
     {
         public int id;
-        public bool locked;
+        public bool locked = true;
         public new string name;
 
-        [TextArea(10,10)]
+        [TextArea(5,5)]
         public string description;
+        [TextArea(10, 10)]
+        public string expandedDescription;
+        [TextArea(10, 10)]
+        public string funFacts;
+
+        //public Sprite thumb;
         //public Sprite image;
 
         public entry(int id, string name, string desc)

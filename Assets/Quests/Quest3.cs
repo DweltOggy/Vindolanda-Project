@@ -10,6 +10,8 @@ public class Quest3 : Objective
     public string info = "Return to Livia Pola in the Temple";
     public int reward = 10;
 
+    public itemObject delivery;
+
     public Dialogue Dialogue1;
     public Dialogue Dialogue2;
     public void Start()
@@ -18,6 +20,11 @@ public class Quest3 : Objective
 
         Dialogue1 = dialogueStore.quest3Dialogue1;
         Dialogue2 = dialogueStore.quest3Dialogue2;
+        
+        delivery = new itemObject(  "Quest_Artifact",
+                                    "Livia's Artifact",
+                                    "Livia Asked you to deliver this!",
+                                    0);
 
     }
     public override bool Achieved()
@@ -35,7 +42,9 @@ public class Quest3 : Objective
 
     public override void complete()
     {
-        GameController.Instance.addItem("Artifact", " Livia Asked you to deliver this!", "ARTIFACT01");
+
+        GameController.Instance.addItem(delivery);
+
         GameController.Instance.money += reward;
         if (!GameController.Instance.gameObject.GetComponent<Quest4>())
         {
