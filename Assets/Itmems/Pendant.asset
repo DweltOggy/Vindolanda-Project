@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 179aaa8a34b52514e85b7297f98302c9, type: 3}
-  m_Name: Rope
+  m_Name: Pendant
   m_EditorClassIdentifier: 
-  name: Rope
-  description: Roman Rope
-  objID: REPLACE
-  databaseEntry: 9
+  name: Pendant
+  description: 
+  objID: QUEST_PENDANT
+  databaseEntry: 18
   prefab: {fileID: 6043861628270409130, guid: 1e6255c6287786e42896b3a81b33a1f7, type: 3}

@@ -11,6 +11,7 @@ namespace knowledge
         public static Encyclopedia Instance;
 
         [SerializeField] public List<entry> enteries;// = new List<entry>();
+        public GameObject notifier;
 
         public void Start()
         {
@@ -44,14 +45,24 @@ namespace knowledge
             }
         }
 
+        IEnumerator showNotifier(float delay)
+        {
+
+            notifier.SetActive(true);
+            yield return new WaitForSeconds(delay);
+            notifier.SetActive(false);
+        }
+
         public void unlockEntry(int id)
         {
             enteries.Find(entry => entry.id == id).unlock();
+            StartCoroutine(showNotifier(2));
         }
 
         public void unlockEntry(string itemName)
         {
             enteries.Find(entry => entry.name == itemName).unlock();
+            StartCoroutine(showNotifier(1));
         }
 
         public float percentageComplete() 

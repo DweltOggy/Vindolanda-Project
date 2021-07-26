@@ -20,11 +20,8 @@ public class Quest3 : Objective
 
         Dialogue1 = dialogueStore.quest3Dialogue1;
         Dialogue2 = dialogueStore.quest3Dialogue2;
-        
-        delivery = new itemObject(  "Quest_Artifact",
-                                    "Livia's Artifact",
-                                    "Livia Asked you to deliver this!",
-                                    0);
+
+        delivery = dialogueStore.artifact;
 
     }
     public override bool Achieved()

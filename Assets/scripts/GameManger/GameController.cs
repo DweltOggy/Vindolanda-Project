@@ -18,8 +18,7 @@ namespace objectives
         public static GameController Instance;
 
         public List <Objective> objectives = new List<Objective>();
-        //public List <item> inventory = new List<item>();
-
+    
         public Inventory playerInventory;
         public int money = 30;
 
@@ -41,6 +40,11 @@ namespace objectives
 
             objectives.AddRange(GameObject.FindObjectsOfType<Objective>());
             DontDestroyOnLoad(this.gameObject);
+        }
+
+        private void OnApplicationQuit()
+        {
+            playerInventory.clearInventory();
         }
 
         void OnGUI()

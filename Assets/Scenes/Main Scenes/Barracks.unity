@@ -5030,6 +5030,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8599476667401371863, guid: 7d94598a1ec9fe046a5298dff7464aa0, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 2604fb68c3be6794c85a524e222d832b, type: 2}
     - target: {fileID: 8599476667401372456, guid: 7d94598a1ec9fe046a5298dff7464aa0, type: 3}
       propertyPath: m_Name
       value: Interacatble Object (2)

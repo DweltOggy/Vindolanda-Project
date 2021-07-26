@@ -15,14 +15,23 @@ public class EcycloUIManager : MonoBehaviour
 
     [SerializeField] GameObject ExpandLayout;
 
+    [SerializeField] Text titleUIText;
+    [SerializeField] Text descriptionUIText;
+    [SerializeField] Text factsUIText;
+    //[SerializeField] Sprite image;
+
+    [SerializeField] Button closeUIButton;
 
 
-    List<GameObject> uiElemants;
+    public List<GameObject> uiElemants;
 
     bool active = false;
     // Start is called before the first frame update
     void Start()
     {
+        closeUIButton.onClick.RemoveAllListeners();
+        closeUIButton.onClick.AddListener(hideExpanded);
+
         int loopcounter = 0;
         foreach (var entry in Encyclopedia.Instance.enteries)
         {
@@ -100,11 +109,20 @@ public class EcycloUIManager : MonoBehaviour
         //FindObjectOfType<MouseLook>().MouseEnabled = true;
         //FindObjectOfType<PlayerMovement>().MovementEnabled = true;
 
+        ExpandLayout.SetActive(false);
         MainCanvas.SetActive(false);
+    }
+
+    public void hideExpanded()
+    {
+        ExpandLayout.SetActive(false);
     }
 
     public void expand(Button button)
     {
+        titleUIText.text = button.GetComponentInParent<access>().info.name;
+        descriptionUIText.text = button.GetComponentInParent<access>().info.expandedDescription;
+        factsUIText.text = button.GetComponentInParent<access>().info.funFacts;
         ExpandLayout.SetActive(true);
     }
 

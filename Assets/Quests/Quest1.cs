@@ -12,17 +12,15 @@ public class Quest1  : Objective
 
     public void Awake()
     {
-        delivery = new itemObject("Quest_Pendant",
-                            "Livia's Pendant",
-                            "Livia Asked you to deliver this!",
-                            0);
+        QuestDialogues dialogueStore = FindObjectOfType<QuestDialogues>();
+
+        delivery = dialogueStore.pendant;
 
         DontDestroyOnLoad(this);
     }
     public override bool Achieved()
     {
-        if (/*FindObjectOfType<DialogueManger>().inDialogue == false &&*/
-            FindObjectOfType<DialogueManger>().currentNPC == "Livia Pola")
+        if (FindObjectOfType<DialogueManger>().currentNPC == "Livia Pola")
         {
             return true;
         }

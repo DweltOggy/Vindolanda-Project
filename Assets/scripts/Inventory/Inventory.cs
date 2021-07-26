@@ -17,6 +17,14 @@ public class Inventory : ScriptableObject
         }
     }
 
+    public void removeItem(itemObject newItem)
+    {
+        if (checkInventory(newItem.objID))
+        {
+            items.Remove(newItem);
+        }
+    }
+
     public void clearInventory()
     {
         items.Clear();

@@ -16,3 +16,10 @@ MonoBehaviour:
   locked: 1
   name: Vindolanda
   description: We're testing scriptable objects!
+  expandedDescription: Well this is a test for me to see if I can access this. There
+    will be alsorts of fun info herer one day!
+  funFacts: 'Fun Facts:
+
+    -This is a Test!
+
+    -That means we''re just testing!'

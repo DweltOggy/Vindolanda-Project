@@ -21,13 +21,6 @@ namespace knowledge
         //public Sprite thumb;
         //public Sprite image;
 
-        public entry(int id, string name, string desc)
-        {
-            locked = true;
-            this.id = id;
-            this.name = name;
-            this.description = desc;
-        }
         public void unlock()
         {
             locked = false;

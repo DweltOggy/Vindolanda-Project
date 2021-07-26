@@ -10,9 +10,9 @@ public class itemObject : ScriptableObject
     public string description;
     public string objID;
     public int databaseEntry;
-    //public Sprite image;
+    public GameObject prefab;
 
-    public itemObject(string objID, string name, string desc, int data)
+    public void set(string objID, string name, string desc, int data)
     {
         this.objID = objID;    
         this.name = name;

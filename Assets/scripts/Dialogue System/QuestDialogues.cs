@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class QuestDialogues : MonoBehaviour
 {
+    [Header(" Shrine Items")]
+    public itemObject pendant;
+    public itemObject artifact;
     //shrine quests
     [Header("Shrine Quests")]
     public Dialogue tavernDialogue1;
