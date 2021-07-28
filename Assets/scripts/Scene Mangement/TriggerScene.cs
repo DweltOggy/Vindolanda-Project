@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 public class TriggerScene : MonoBehaviour
 {
     bool inProximity = false;
@@ -14,7 +13,7 @@ public class TriggerScene : MonoBehaviour
         timer += Time.deltaTime;
         if (timer > 3.0f && inProximity && Input.GetKeyDown(KeyCode.E))
         {
-            SceneManager.LoadScene(sceneName);
+            LevelLoader.Instance.loadLevel("MapScene");
         }
     }
 

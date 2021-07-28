@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 
 namespace EasyUI.PopUps
@@ -82,8 +81,9 @@ namespace EasyUI.PopUps
 
         public void changeScene()
         {
-            print("changing scene");
-            SceneManager.LoadScene(popup.Destination);
+            //SceneManager.LoadScene(popup.Destination);
+            LevelLoader.Instance.loadLevel(popup.Destination);
+
         }
 
     }

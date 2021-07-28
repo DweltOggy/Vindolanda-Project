@@ -6,13 +6,6 @@ using knowledge;
 
 namespace objectives
 {
-    public struct item
-    {
-        public string name;
-        public string description;
-        public string objID;
-    }
-
     public class GameController : MonoBehaviour
     {
         public static GameController Instance;
@@ -22,9 +15,19 @@ namespace objectives
         public Inventory playerInventory;
         public int money = 30;
 
+
+        public bool first = true;
+        bool main = false;
+        public GameObject StartBackGround;
+
         public Text value;
         public Text displayMoney;
         public Text percentage;
+
+        public GameObject notifier;
+        public GameObject UI;
+
+        public Dialogue openingDiag;
 
         void Awake()
         {
@@ -32,12 +35,10 @@ namespace objectives
             {
                 Instance = this;         
             }
-
             else if (Instance != this)
             {
                 Destroy(this.gameObject);
             }
-
             objectives.AddRange(GameObject.FindObjectsOfType<Objective>());
             DontDestroyOnLoad(this.gameObject);
         }
@@ -55,13 +56,17 @@ namespace objectives
                 if(!value.text.Contains(message))
                     value.text +="- " + message + "\n";
             }
-
-           displayMoney.text = "Money: " + money;
+            displayMoney.text = "Money: " + money;
             percentage.text = "Journal (J) \n" + Encyclopedia.Instance.percentageComplete() + "%";
         }
 
         void Update()
         {
+            if (first)
+                playStart();
+            else if (!main)
+                endStart();
+
             foreach (var objective in objectives)
             {
                 if (objective.Achieved())
@@ -74,6 +79,26 @@ namespace objectives
             refresh();
         }
 
+        void playStart()
+        {
+            DialogueManger manager = FindObjectOfType<DialogueManger>();
+            manager.StartDialogue(openingDiag);
+            StartBackGround.SetActive(true);
+            first = false;
+        }
+        void endStart()
+        {
+            DialogueManger manager = FindObjectOfType<DialogueManger>();
+            if(!first && !main)
+            {
+                if (!manager.inDialogue)
+                {
+                    main = true;
+                    StartBackGround.SetActive(false);
+                }
+            }
+        }
+
         public void refresh()
         {
             objectives.Clear();
@@ -83,10 +108,15 @@ namespace objectives
         public void addItem(itemObject newItem)
         {
             playerInventory.addItem(newItem);
+            StartCoroutine(showNotifier(2));
         }
 
+        IEnumerator showNotifier(float delay)
+        {
+            notifier.SetActive(true);
+            yield return new WaitForSeconds(delay);
+            notifier.SetActive(false);
+        }
     }
-
-
 }
 

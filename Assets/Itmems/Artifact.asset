@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Artifact
   m_EditorClassIdentifier: 
   name: Artifact
-  description: 
+  description: Livia Asked you to deliver this to someone!
   objID: QUEST_ARTIFACT
   databaseEntry: 19
-  prefab: {fileID: 0}
+  prefab: {fileID: 6043861628270409130, guid: 4f1dd535c02afff40b431621ed302db1, type: 3}
+  value: 10

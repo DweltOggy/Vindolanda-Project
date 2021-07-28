@@ -13,6 +13,7 @@ public class Inventory : ScriptableObject
     { 
         if(!checkInventory(newItem.objID))
         {
+            newItem.setPrefab();
             items.Add(newItem);
         }
     }

@@ -31,6 +31,7 @@ public class ReturnTOMap : MonoBehaviour
 
     void returnToMap()
     {
-        SceneManager.LoadScene("MapScene");
+        //SceneManager.LoadScene("MapScene");
+        LevelLoader.Instance.loadLevel("MapScene");
     }
 }

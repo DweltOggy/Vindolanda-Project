@@ -16,4 +16,4 @@ MonoBehaviour:
   description: Transports Water!
   objID: REPLACE
   databaseEntry: 12
-  prefab: {fileID: 6043861628270409130, guid: 1e6255c6287786e42896b3a81b33a1f7, type: 3}
+  prefab: {fileID: 6043861628270409130, guid: abbfb49045e7e2b4c908861eeed428ba, type: 3}

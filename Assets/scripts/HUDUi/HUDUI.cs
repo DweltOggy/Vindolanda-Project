@@ -6,22 +6,72 @@ using UnityEngine.SceneManagement;
 
 public class HUDUI : MonoBehaviour
 {
-    [SerializeField] Button exitUIButton;
+   
+    [SerializeField] GameObject ObjectiveCanvas;
+    [SerializeField] GameObject InventoryCanvas;
 
-    void Start()
+    bool active = false;
+
+    void Update()
     {
-        exitUIButton.onClick.RemoveAllListeners();
-        exitUIButton.onClick.AddListener(Exit);
+
+        if (active && Input.GetKeyDown(KeyCode.Q))
+        {
+            active = false;
+            Hide(true);
+        }
+        else if (!active && Input.GetKeyDown(KeyCode.Q))
+        {
+            active = true;
+            Show(true);
+        }
+
+        if (active && Input.GetKeyDown(KeyCode.I))
+        {
+            active = false;
+            Hide(false);
+        }
+        else if (!active && Input.GetKeyDown(KeyCode.I))
+        {
+            active = true;
+            Show(false);
+        }
     }
 
-    void Exit()
+    public void Show(bool obj)
     {
-        print("quitting");
-        Application.Quit();
+        if (obj)
+        { 
+            ObjectiveCanvas.SetActive(true); 
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.Confined;
+        }
+            
+        else
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.Confined;
+            InventoryCanvas.SetActive(true);
+        }
+           
     }
 
-    void changeScene()
+    public void Hide(bool obj)
     {
-        SceneManager.LoadScene("Encyclopedia");
+        if (obj)
+        {  
+            ObjectiveCanvas.SetActive(false);
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+           
+        else
+        { 
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            InventoryCanvas.SetActive(false);
+        }
+            
     }
+
 }

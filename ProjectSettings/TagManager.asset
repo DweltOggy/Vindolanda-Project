@@ -8,6 +8,7 @@ TagManager:
   - TavernPatron
   - ShrineQuest
   - BarracksQuest
+  - shop
   layers:
   - Default
   - TransparentFX

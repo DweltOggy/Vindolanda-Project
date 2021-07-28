@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Shield
   m_EditorClassIdentifier: 
   name: Shield
-  description: a Roman Shield
+  description: A larrge roman shield used by the soldiers in the fort!
   objID: REPLACE
   databaseEntry: 10
-  prefab: {fileID: 6043861628270409130, guid: 1e6255c6287786e42896b3a81b33a1f7, type: 3}
+  prefab: {fileID: 6043861628270409130, guid: b859a1ee9563d744e93dfea9081cf4c7, type: 3}
+  value: 10

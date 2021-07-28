@@ -22,14 +22,15 @@ public class DialogueManger : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-
         animator.SetBool("isOpen", true);
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
 
-        FindObjectOfType<MouseLook>().MouseEnabled = false;
-        FindObjectOfType<PlayerMovement>().MovementEnabled = false;
-
+        if (FindObjectOfType<MouseLook>())
+        {
+            FindObjectOfType<MouseLook>().MouseEnabled = false;
+            FindObjectOfType<PlayerMovement>().MovementEnabled = false;
+        }
         inDialogue = true;
         nameText.text = dialogue.name;
         currentNPC = dialogue.name;
@@ -60,10 +61,12 @@ public class DialogueManger : MonoBehaviour
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-
-        FindObjectOfType<MouseLook>().MouseEnabled = true;
-        FindObjectOfType<PlayerMovement>().MovementEnabled = true;
-       
+        if(FindObjectOfType<MouseLook>())
+        {
+            FindObjectOfType<MouseLook>().MouseEnabled = true;
+            FindObjectOfType<PlayerMovement>().MovementEnabled = true;
+        }
+        
         currentNPC = " ";
 
         animator.SetBool("isOpen", false);

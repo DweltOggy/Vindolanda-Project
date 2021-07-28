@@ -55,8 +55,12 @@ namespace knowledge
 
         public void unlockEntry(int id)
         {
-            enteries.Find(entry => entry.id == id).unlock();
-            StartCoroutine(showNotifier(2));
+            if (enteries.Find(entry => entry.id == id).locked)
+            {            
+                enteries.Find(entry => entry.id == id).unlock();
+                StartCoroutine(showNotifier(2));
+            }
+
         }
 
         public void unlockEntry(string itemName)
