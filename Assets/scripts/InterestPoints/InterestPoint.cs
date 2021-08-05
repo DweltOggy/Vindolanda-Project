@@ -5,27 +5,18 @@ using UnityEngine;
 public class InterestPoint : MonoBehaviour
 {
     GameObject namePlate;
-    private GameObject MainCamera;
-
     public string destination = " ";
     public string label = "Location";
     public string Description = " This is a location ";
-
+    public GameObject labelPrefab;
     void Start()
     {
-        namePlate = new GameObject("NamePlate");
-        namePlate.AddComponent<TextMesh>();
-        MainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+        namePlate = Instantiate(labelPrefab);
         TextMesh textMesh = namePlate.GetComponent<TextMesh>();
         if (textMesh != null)
         {
-            textMesh.transform.position = transform.position + new Vector3(0, 30.0f, 0);  
-            textMesh.transform.Rotate(Vector3.up - new Vector3(0, 180, 0));
-            textMesh.characterSize = 0.2f;
-            textMesh.fontSize = 500;
-            textMesh.alignment = TextAlignment.Center;
-            textMesh.anchor = TextAnchor.MiddleCenter;
-            textMesh.color = Color.red;
+            namePlate.transform.position = transform.position + new Vector3(0, 30.0f, 0);
+            namePlate.transform.Rotate(Vector3.up - new Vector3(0, 180, 0));
             textMesh.text = label;
         }
     }
