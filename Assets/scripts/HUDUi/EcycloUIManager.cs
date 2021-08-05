@@ -18,10 +18,11 @@ public class EcycloUIManager : MonoBehaviour
     [SerializeField] Text titleUIText;
     [SerializeField] Text descriptionUIText;
     [SerializeField] Text factsUIText;
-    //[SerializeField] Sprite image;
+    [SerializeField] Image expandImage;
 
     [SerializeField] Button closeUIButton;
 
+   
 
     public List<GameObject> uiElemants;
 
@@ -73,17 +74,20 @@ public class EcycloUIManager : MonoBehaviour
         foreach (var elemant in uiElemants)
         {
             Text test = elemant.GetComponentInChildren<Text>();
+            Image image = elemant.GetComponentInChildren<Image>();
             Button buttonElemant = elemant.GetComponentInChildren<Button>();
             
             if (elemant.GetComponent<access>().info.locked == true && test)
             {
                 test.text = "LOCKED";
-                buttonElemant.GetComponent<Image>().color = Color.black;
+                image.sprite = elemant.GetComponent<access>().info.thumb;
+                buttonElemant.GetComponent<Image>().color = Color.gray;
             }
             else
             {
                 test.text = (elemant.GetComponent<access>().info.name + "\n" 
                             + (elemant.GetComponent<access>().info.description));
+                image.sprite = elemant.GetComponent<access>().info.thumb;
                 buttonElemant.GetComponent<Image>().color = Color.white;
             }
         }
@@ -93,8 +97,6 @@ public class EcycloUIManager : MonoBehaviour
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
-        //FindObjectOfType<MouseLook>().MouseEnabled = false;
-        //FindObjectOfType<PlayerMovement>().MovementEnabled = false;
         MainCanvas.SetActive(true);
     }
 
@@ -106,8 +108,6 @@ public class EcycloUIManager : MonoBehaviour
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
         }
-        //FindObjectOfType<MouseLook>().MouseEnabled = true;
-        //FindObjectOfType<PlayerMovement>().MovementEnabled = true;
 
         ExpandLayout.SetActive(false);
         MainCanvas.SetActive(false);
@@ -120,10 +120,15 @@ public class EcycloUIManager : MonoBehaviour
 
     public void expand(Button button)
     {
-        titleUIText.text = button.GetComponentInParent<access>().info.name;
-        descriptionUIText.text = button.GetComponentInParent<access>().info.expandedDescription;
-        factsUIText.text = button.GetComponentInParent<access>().info.funFacts;
-        ExpandLayout.SetActive(true);
+        if(button.GetComponentInParent<access>().info.locked == false)
+        {
+            titleUIText.text = button.GetComponentInParent<access>().info.name;
+            descriptionUIText.text = button.GetComponentInParent<access>().info.expandedDescription;
+            factsUIText.text = button.GetComponentInParent<access>().info.funFacts;
+            expandImage.sprite = button.GetComponentInParent<access>().info.image;
+            ExpandLayout.SetActive(true);
+        }
+
     }
 
 }
