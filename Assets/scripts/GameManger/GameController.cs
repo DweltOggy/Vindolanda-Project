@@ -43,7 +43,7 @@ namespace objectives
             {
                 string message = objective.message();
                 if(!value.text.Contains(message))
-                    value.text +="- " + message + "\n";
+                    value.text +="- " + message + "\n \n";
             }
             percentage.text = "Journal (J) \n" + Encyclopedia.Instance.percentageComplete() + "%";
         }

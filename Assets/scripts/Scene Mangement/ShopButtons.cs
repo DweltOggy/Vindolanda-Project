@@ -47,10 +47,6 @@ public class ShopButtons : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        //this.gameObject.SetActive(true);
-    }
     public void returnToMap()
     {
         gameObject.SetActive(false);
