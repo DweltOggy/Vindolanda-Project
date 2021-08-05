@@ -12,7 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b07cc188e8cd7640905621179275f59, type: 3}
   m_Name: Tavern
   m_EditorClassIdentifier: 
-  id: 0
-  locked: 0
+  id: 4
+  locked: 1
   name: Tavern
-  description: test
+  description: TAverns served hot meals and alchol.
+  expandedDescription: Test Description Test Description Test Description Test Description
+    Test Description Test Description Test Description Test Description Test Description
+    Test Description Test Description Test Description Test Description Test Description
+    Test Description Test Description Test Description Test Description Test Description
+  funFacts: 'Fun Facts:
+
+    -FAct'

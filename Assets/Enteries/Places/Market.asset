@@ -15,4 +15,13 @@ MonoBehaviour:
   id: 3
   locked: 1
   name: Market
-  description: test
+  description: A place where the citizens could come to buy goods.
+  expandedDescription: Test Description Test Description Test Description Test Description
+    Test Description Test Description Test Description Test Description Test Description
+    Test Description Test Description Test Description Test Description Test Description
+    Test Description Test Description Test Description Test Description Test Description
+  funFacts: 'Fun Facts:
+
+    -Facts
+
+    -Facts 2'

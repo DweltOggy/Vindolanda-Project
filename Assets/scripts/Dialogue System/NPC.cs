@@ -7,9 +7,7 @@ public class NPC : MonoBehaviour
 {
     public Dialogue dialogue;
     public Dialogue altDialogue;
-
     bool inProximity = false;
-
 
     void Update()
     {

@@ -11519,6 +11519,50 @@ MonoBehaviour:
     name: Gaius Marinus
     sentances:
     - You'd be helping me out a ton getting my bow...
+  BarracksDialogue5:
+    name: Gaius Marinus
+    sentances:
+    - My Bow! Livia your're a life saver!
+    - Here take this it isn't m,uch but i hope it helps!
+    - Enjoy the party!
+  BarracksDialogue6:
+    name: Gaius Marinus
+    sentances:
+    - Thank you Livia! You helped so much!
+  TavernQuest1:
+    name: Scribe
+    sentances:
+    - Oh this belongs to tertius... go on take it to him then...
+  TavernQuest2:
+    name: Scribe
+    sentances:
+    - Give that to tertius then...
+  TavernQuest3:
+    name: Tertius Cordus
+    sentances:
+    - That Scribe had it did he?
+    - Well thanks for your trouble! Here take this reward.
+  TavernQuest4:
+    name: Tertius Cordus
+    sentances:
+    - Thank you!
+  BathQuest1:
+    name: 
+    sentances: []
+  BathQuest2:
+    name: 
+    sentances: []
+  BathQuest3:
+    name: Manius Rex
+    sentances:
+    - Thank you! You're a life saver!
+    - They really wanted meat!
+    - Here's you reward!
+  BathQuest4:
+    name: Manius Rex
+    sentances:
+    - Thank you so much!
+  key: {fileID: 11400000, guid: ac0d291b982e845469d0c3803d2c27fb, type: 2}
 --- !u!114 &1034747601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17834,6 +17878,146 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2729007630264582308, guid: 550806a894e20ec4cb17e351e62c221f, type: 3}
   m_PrefabInstance: {fileID: 200852530}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1534050286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1534050288}
+  - component: {fileID: 1534050287}
+  - component: {fileID: 1534050294}
+  - component: {fileID: 1534050293}
+  - component: {fileID: 1534050290}
+  - component: {fileID: 1534050289}
+  - component: {fileID: 1534050291}
+  - component: {fileID: 1534050292}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1534050287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534050286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cadbf301d954774cafb8ed5f22315a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectives: []
+  playerInventory: {fileID: 11400000, guid: c7e0c0456cde9754397413f1a4407f40, type: 2}
+  money: 1000
+  notifier: {fileID: 796584392}
+  displayMoney: {fileID: 1606516610}
+--- !u!4 &1534050288
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534050286}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 563.9837, y: 538.17737, z: -115.04473}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1534050289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534050286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e312950d4d975ab40badba85a470a45e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info: Talk to Gaius Marinus in the Barracks
+  reward: 2
+--- !u!114 &1534050290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534050286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a42f0e3a7ef51e44696215750d7d9c99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info: Talk to Livia Pola in the Temple
+  reward: 2
+  delivery: {fileID: 0}
+--- !u!114 &1534050291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534050286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09b693dfcc1ab1d468a784c53ba91335, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info: Talk to Manius Rex in the Bath House
+  reward: 2
+--- !u!114 &1534050292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534050286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e3aabaa02ed51b46be8f1f5b7658d2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info: Talk to Tertius Cordus in the Tavern
+  reward: 2
+  id: 27
+--- !u!114 &1534050293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534050286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5238c27fa76ac2488e9e671d8594e4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info: Buy the Perfect Birthday Gift!
+  reward: 2
+--- !u!114 &1534050294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534050286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fff1a042a3269c40bbb7f4906fe4cbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info: Fill your journal!
+  reward: 200
 --- !u!4 &1541866021 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4085261713231222, guid: 33f6e1a7dd82048fd8a1ee7a613f695d, type: 3}
@@ -18919,6 +19103,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2266229741083227443, guid: aa0d3510c0b58434e90a60471956e435, type: 3}
   m_PrefabInstance: {fileID: 2266229741057098696}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1593131680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593131679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6de2d65bc6ea3b441bd0b519a19a4b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 6
 --- !u!114 &1593131682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24898,42 +25095,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e1008dce8c983ef4cb0f9f85c66189a5, type: 2}
   - {fileID: 11400000, guid: bf4b8d002a234de46ba4f808e6f4769a, type: 2}
   - {fileID: 11400000, guid: 0df9020b50a38054fb9b4854005200d8, type: 2}
-  - {fileID: 11400000, guid: 94eb8db0f717646478640c0be80ad32e, type: 2}
-  - {fileID: 11400000, guid: 94eb8db0f717646478640c0be80ad32e, type: 2}
-  - {fileID: 11400000, guid: 94eb8db0f717646478640c0be80ad32e, type: 2}
-  - {fileID: 11400000, guid: 94eb8db0f717646478640c0be80ad32e, type: 2}
-  - {fileID: 11400000, guid: 94eb8db0f717646478640c0be80ad32e, type: 2}
-  - {fileID: 11400000, guid: 94eb8db0f717646478640c0be80ad32e, type: 2}
-  - {fileID: 11400000, guid: 94eb8db0f717646478640c0be80ad32e, type: 2}
-  - {fileID: 11400000, guid: 94eb8db0f717646478640c0be80ad32e, type: 2}
-  - {fileID: 11400000, guid: 94eb8db0f717646478640c0be80ad32e, type: 2}
+  - {fileID: 11400000, guid: fdd561a2cc39af749bdb85166e9b8f64, type: 2}
+  - {fileID: 11400000, guid: a6e8174ec0ff71c42a576d0ac5231efe, type: 2}
+  - {fileID: 11400000, guid: 63e2220702198ae449456c1b683ac144, type: 2}
+  - {fileID: 11400000, guid: 9061882389946b04391baab4b8569ee4, type: 2}
+  - {fileID: 11400000, guid: 669b9404adad7604490bf752a4ea52dd, type: 2}
+  - {fileID: 11400000, guid: db040bb6f6a2aba4cbd1880b48fbc3d7, type: 2}
   notifier: {fileID: 671469411}
---- !u!114 &8641675576170836375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8641675576170836373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a42f0e3a7ef51e44696215750d7d9c99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  info: Talk to Livia Pola in the Temple
-  reward: 2
-  delivery: {fileID: 0}
---- !u!114 &8641675576170836378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8641675576170836373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e312950d4d975ab40badba85a470a45e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  info: Talk to Gaius Marinus in the Barracks
-  reward: 2

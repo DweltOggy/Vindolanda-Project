@@ -15,4 +15,12 @@ MonoBehaviour:
   id: 2
   locked: 1
   name: Barracks
-  description: Test
+  description: The place where the soldiers come to sleep and live.
+  expandedDescription: The roman empire provided livng quarters for its soldiers!
+  funFacts: 'Fun Facts:
+
+    - Fact 1
+
+    - Fact 2
+
+    - Fact 3'

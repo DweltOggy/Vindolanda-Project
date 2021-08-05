@@ -25,4 +25,26 @@ public class QuestDialogues : MonoBehaviour
     [Header("Barracks Quests")]
     public Dialogue BarracksDialogue3;
     public Dialogue BarracksDialogue4;
+
+    public Dialogue BarracksDialogue5;
+    public Dialogue BarracksDialogue6;
+
+    //Tavern Quests
+    [Header("Tavern Quests")]
+    public Dialogue TavernQuest1;
+    public Dialogue TavernQuest2;
+
+    public Dialogue TavernQuest3;
+    public Dialogue TavernQuest4;
+
+    //Tavern Quests
+    [Header("Bath Quests")]
+    public Dialogue BathQuest1;
+    public Dialogue BathQuest2;
+
+    public Dialogue BathQuest3;
+    public Dialogue BathQuest4;
+
+    [Header("Tveren Quest Item")]
+    public itemObject key;
 }

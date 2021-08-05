@@ -12,7 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b07cc188e8cd7640905621179275f59, type: 3}
   m_Name: Shrine
   m_EditorClassIdentifier: 
-  id: 0
-  locked: 0
-  name: Shrine
-  description: test
+  id: 5
+  locked: 1
+  name: Temple
+  description: The temple at vindolnda.
+  expandedDescription: Test Description Test Description Test Description Test Description
+    Test Description Test Description Test Description Test Description Test Description
+    Test Description Test Description Test Description Test Description Test Description
+    Test Description Test Description Test Description Test Description Test Description
+  funFacts: 'Fun Facts:
+
+    - Facts
+
+    - More facts'

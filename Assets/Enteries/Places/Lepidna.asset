@@ -12,7 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b07cc188e8cd7640905621179275f59, type: 3}
   m_Name: Lepidna
   m_EditorClassIdentifier: 
-  id: 0
-  locked: 0
+  id: 6
+  locked: 1
   name: Lepidna
-  description: test
+  description: Our main character and the wife of the comnader of the fort
+  expandedDescription: Lepidna! Test Description Test Description Test Description
+    Test Description Test Description Test Description Test Description Test Description
+    Test Description Test Description Test Description Test Description Test Description
+    Test Description Test Description Test Description Test Description Test Description
+    Test Description
+  funFacts: 'Fun Facts:
+
+    - Fact 1
+
+    - Fact 2
+
+    - Fact 3
+
+    - FAct 4'

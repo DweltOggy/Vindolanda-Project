@@ -15,4 +15,15 @@ MonoBehaviour:
   id: 1
   locked: 1
   name: Bath House
-  description: Test
+  description: The place where both soldiers and civilians could come to rest and
+    relax.
+  expandedDescription: The bath house! Test Description Test Description Test Description
+    Test Description Test Description Test Description Test Description Test Description
+    Test Description Test Description Test Description Test Description Test Description
+    Test Description Test Description Test Description Test Description Test Description
+    Test Description
+  funFacts: 'Fun Facts:
+
+    - Fact 1
+
+    - Fact 2'

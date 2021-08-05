@@ -640,7 +640,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7046778948776811965, guid: 10abbad8727d97743844dc5004b806bd, type: 3}
       propertyPath: dialogue.name
-      value: Scrbe
+      value: Scribe
       objectReference: {fileID: 0}
     - target: {fileID: 7046778948776811965, guid: 10abbad8727d97743844dc5004b806bd, type: 3}
       propertyPath: dialogue.sentances.Array.size
@@ -700,7 +700,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7046778948776811970, guid: 10abbad8727d97743844dc5004b806bd, type: 3}
       propertyPath: m_Name
-      value: NPC
+      value: Scribe
+      objectReference: {fileID: 0}
+    - target: {fileID: 7046778948776811970, guid: 10abbad8727d97743844dc5004b806bd, type: 3}
+      propertyPath: m_TagString
+      value: Scribe
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10abbad8727d97743844dc5004b806bd, type: 3}

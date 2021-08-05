@@ -15,9 +15,13 @@ MonoBehaviour:
   id: 0
   locked: 1
   name: Vindolanda
-  description: We're testing scriptable objects!
+  description: The Roman fort and village of vindolnada and the setting of our game.
   expandedDescription: Well this is a test for me to see if I can access this. There
-    will be alsorts of fun info herer one day!
+    will be alsorts of fun info herer one day! Test Description Test Description
+    Test Description Test Description Test Description Test Description Test Description
+    Test Description Test Description Test Description Test Description Test Description
+    Test Description Test Description Test Description Test Description Test Description
+    Test Description Test Description
   funFacts: 'Fun Facts:
 
     -This is a Test!

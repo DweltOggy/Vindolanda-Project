@@ -14,7 +14,7 @@ public class Collect : MonoBehaviour
         if(item.objID == "REPLACE")
             item.objID = name + transform.position.ToString() + transform.eulerAngles.ToString();
 
-        if(GameController.Instance.playerInventory.checkInventory(item.objID))
+        if(Player.Instance.playerInventory.checkInventory(item.objID))
         {
             Destroy(gameObject);
         }
@@ -28,7 +28,7 @@ public class Collect : MonoBehaviour
             FindObjectOfType<EcycloUIManager>().updateUI();
 
             if(item)
-                GameController.Instance.addItem(item);
+                Player.Instance.addItem(item);
             gameObject.SetActive(false);
         }
     }

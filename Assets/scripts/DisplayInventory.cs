@@ -43,8 +43,23 @@ public class DisplayInventory : MonoBehaviour
                 var obj = Instantiate(inventory.items[i].prefab, Vector3.zero, Quaternion.identity, transform);
                 obj.GetComponent<RectTransform>().localPosition = GetPos(i);
                 itemsDisplayed.Add(inventory.items[i], obj);
-            } 
+            }
         }
+        //List<itemObject> toRemove = new List<itemObject>();
+        //foreach(KeyValuePair<itemObject,GameObject> display in itemsDisplayed)
+        //{
+        //    if(!inventory.checkInventory(display.Key.objID))
+        //    {
+        //        toRemove.Add(display.Key);
+        //        //itemsDisplayed.Remove(display.Key);
+        //    }
+        //}
+
+        //foreach(itemObject item in toRemove)
+        //{
+        //    item.prefab.SetActive(false);
+        //    itemsDisplayed.Remove(item);
+        //}
     }
 
     public Vector3 GetPos(int i)

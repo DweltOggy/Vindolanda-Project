@@ -11,23 +11,17 @@ namespace objectives
         public static GameController Instance;
 
         public List <Objective> objectives = new List<Objective>();
-    
-        public Inventory playerInventory;
-        public int money = 30;
-
 
         public bool first = true;
         bool main = false;
         public GameObject StartBackGround;
 
         public Text value;
-        public Text displayMoney;
         public Text percentage;
 
-        public GameObject notifier;
-        public GameObject UI;
-
         public Dialogue openingDiag;
+
+        public int quizStage = 0;
 
         void Awake()
         {
@@ -43,11 +37,6 @@ namespace objectives
             DontDestroyOnLoad(this.gameObject);
         }
 
-        private void OnApplicationQuit()
-        {
-            playerInventory.clearInventory();
-        }
-
         void OnGUI()
         {
             foreach(var objective in objectives)
@@ -56,7 +45,6 @@ namespace objectives
                 if(!value.text.Contains(message))
                     value.text +="- " + message + "\n";
             }
-            displayMoney.text = "Money: " + money;
             percentage.text = "Journal (J) \n" + Encyclopedia.Instance.percentageComplete() + "%";
         }
 
@@ -103,19 +91,6 @@ namespace objectives
         {
             objectives.Clear();
             objectives.AddRange(GameObject.FindObjectsOfType<Objective>());
-        }
-
-        public void addItem(itemObject newItem)
-        {
-            playerInventory.addItem(newItem);
-            StartCoroutine(showNotifier(2));
-        }
-
-        IEnumerator showNotifier(float delay)
-        {
-            notifier.SetActive(true);
-            yield return new WaitForSeconds(delay);
-            notifier.SetActive(false);
         }
     }
 }

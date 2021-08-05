@@ -13,7 +13,7 @@ public class TriggerScene : MonoBehaviour
         timer += Time.deltaTime;
         if (timer > 3.0f && inProximity && Input.GetKeyDown(KeyCode.E))
         {
-            LevelLoader.Instance.loadLevel("MapScene");
+            LevelLoader.Instance.loadLevel(sceneName);
         }
     }
 

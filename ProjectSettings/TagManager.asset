@@ -9,6 +9,9 @@ TagManager:
   - ShrineQuest
   - BarracksQuest
   - shop
+  - BathQuest
+  - TavernQuest
+  - Scribe
   layers:
   - Default
   - TransparentFX
