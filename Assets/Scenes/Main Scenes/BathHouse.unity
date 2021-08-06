@@ -14961,6 +14961,10 @@ PrefabInstance:
       propertyPath: id
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1784294986022810140, guid: aa0d3510c0b58434e90a60471956e435, type: 3}
+      propertyPath: audio
+      value: BathHouse
+      objectReference: {fileID: 0}
     - target: {fileID: 2266229741083227443, guid: aa0d3510c0b58434e90a60471956e435, type: 3}
       propertyPath: m_Name
       value: EntryTrigger
@@ -15029,6 +15033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 26
+  audio: 
 --- !u!1001 &1711793982
 PrefabInstance:
   m_ObjectHideFlags: 0

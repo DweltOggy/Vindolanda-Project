@@ -15900,10 +15900,64 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: A
-    clip: {fileID: 8300000, guid: 10941011bbe3e7e478f662ceade5f4af, type: 3}
+  - name: BackGround1
+    clip: {fileID: 8300000, guid: 18fa7f85faaee95408b6f749a5990a23, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: BackGround2
+    clip: {fileID: 8300000, guid: c96867f6777a7814a8683df6eca37afa, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Tavern
+    clip: {fileID: 8300000, guid: fa12cfe749020c74aab8f5e147582c30, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Click
+    clip: {fileID: 8300000, guid: 81652031b64c342cc8dbc59c138d77c5, type: 3}
     volume: 1
-    pitch: 0.1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Alert
+    clip: {fileID: 8300000, guid: 52320e590bf774734a288886eba557ba, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Alert2
+    clip: {fileID: 8300000, guid: 2667a0a008b044e218b63df62e2be749, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Temple
+    clip: {fileID: 8300000, guid: cfd57d8fcf1393b4dae3f368d9915357, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: BathHouse
+    clip: {fileID: 8300000, guid: b25699b930ca8f24c8bb73149eec0615, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Barracks
+    clip: {fileID: 8300000, guid: 3fc0fc27ebf04834baa4edb20a405aef, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: MiniGame
+    clip: {fileID: 8300000, guid: 968f5db6df9e1454497748f5250ef7f0, type: 3}
+    volume: 0.1
+    pitch: 1
     loop: 1
     source: {fileID: 0}
 --- !u!4 &1375296547
@@ -19169,6 +19223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 6
+  audio: 
 --- !u!114 &1593131682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24666,6 +24721,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1784294986022810140, guid: aa0d3510c0b58434e90a60471956e435, type: 3}
+      propertyPath: audio
+      value: BackGround1
+      objectReference: {fileID: 0}
     - target: {fileID: 2266229741083227443, guid: aa0d3510c0b58434e90a60471956e435, type: 3}
       propertyPath: m_Name
       value: EntryTrigger

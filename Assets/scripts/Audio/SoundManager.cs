@@ -34,7 +34,7 @@ public class SoundManager : MonoBehaviour
 
     private void Start()
     {
-        Play("A");
+        Play("BackGround1");
     }
 
     public void Play(string Name)
@@ -45,7 +45,6 @@ public class SoundManager : MonoBehaviour
             Debug.Log("no sound found");
             return;
         }
-            
         s.source.Play();
     }
 
@@ -55,6 +54,25 @@ public class SoundManager : MonoBehaviour
         if (s == null)
             return;
         s.source.Stop();
+    }
+
+    public bool alreadyPlaying(string Name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == Name);
+
+        if (s.source.isPlaying)
+            return true;
+
+        return false;
+    }
+
+    public void stopLoops()
+    {
+        foreach(Sound s in sounds)
+        {
+            if(s.loop)
+                Stop(s.name);
+        }
     }
 
 }

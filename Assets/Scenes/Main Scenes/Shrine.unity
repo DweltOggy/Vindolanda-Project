@@ -4748,6 +4748,10 @@ PrefabInstance:
       propertyPath: id
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1784294986022810140, guid: aa0d3510c0b58434e90a60471956e435, type: 3}
+      propertyPath: audio
+      value: Temple
+      objectReference: {fileID: 0}
     - target: {fileID: 2266229741083227443, guid: aa0d3510c0b58434e90a60471956e435, type: 3}
       propertyPath: m_Name
       value: EntryTrigger

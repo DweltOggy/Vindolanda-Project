@@ -40,13 +40,15 @@ public class Player : MonoBehaviour
     }
 
     public void addItem(itemObject newItem)
-    {
+    { 
+        SoundManager.Instance.Play("Alert");
         playerInventory.addItem(newItem);
         StartCoroutine(showNotifier(2));
     }
 
     public void removeItem(itemObject newItem)
     {
+       
         playerInventory.removeItem(newItem);
         StartCoroutine(showNotifier(2));
     }
