@@ -62,6 +62,11 @@ public class DisplayInventory : MonoBehaviour
         //}
     }
 
+    public void restartGame()
+    {
+        itemsDisplayed.Clear();
+    }
+
     public Vector3 GetPos(int i)
     {
         return new Vector3(xStart +(xSpace * (i % columns)),yStart + (-ySpace * (i/columns)),0f);

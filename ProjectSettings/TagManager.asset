@@ -12,6 +12,7 @@ TagManager:
   - BathQuest
   - TavernQuest
   - Scribe
+  - InvPrefab
   layers:
   - Default
   - TransparentFX

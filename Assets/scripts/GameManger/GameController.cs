@@ -12,16 +12,12 @@ namespace objectives
 
         public List <Objective> objectives = new List<Objective>();
 
-        public bool first = true;
-        bool main = false;
-        public GameObject StartBackGround;
-
         public Text value;
         public Text percentage;
 
-        public Dialogue openingDiag;
-
         public int quizStage = 0;
+
+        [SerializeField] GameObject endCanvas;
 
         void Awake()
         {
@@ -50,11 +46,6 @@ namespace objectives
 
         void Update()
         {
-            if (first)
-                playStart();
-            else if (!main)
-                endStart();
-
             foreach (var objective in objectives)
             {
                 if (objective.Achieved())
@@ -67,30 +58,22 @@ namespace objectives
             refresh();
         }
 
-        void playStart()
-        {
-            DialogueManger manager = FindObjectOfType<DialogueManger>();
-            manager.StartDialogue(openingDiag);
-            StartBackGround.SetActive(true);
-            first = false;
-        }
-        void endStart()
-        {
-            DialogueManger manager = FindObjectOfType<DialogueManger>();
-            if(!first && !main)
-            {
-                if (!manager.inDialogue)
-                {
-                    main = true;
-                    StartBackGround.SetActive(false);
-                }
-            }
-        }
-
         public void refresh()
         {
             objectives.Clear();
             objectives.AddRange(GameObject.FindObjectsOfType<Objective>());
+        }
+
+        public void restart()
+        {
+            quizStage = 0;
+            refresh();
+        }
+
+        public void endGame()
+        {
+            //value.text = " ";
+            endCanvas.SetActive(true);
         }
     }
 }

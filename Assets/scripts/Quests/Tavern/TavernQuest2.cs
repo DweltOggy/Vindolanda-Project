@@ -20,7 +20,7 @@ public class TavernQuest2 : Objective
         Dialogue1 = dialogueStore.TavernQuest1;
         Dialogue2 = dialogueStore.TavernQuest2;
 
-        DontDestroyOnLoad(this);
+        //DontDestroyOnLoad(this);
     }
     public override bool Achieved()
     {

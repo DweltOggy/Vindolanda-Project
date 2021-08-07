@@ -18,6 +18,6 @@ public class MainQuest : Objective
 
     public override void complete()
     {
-
+        objectives.GameController.Instance.endGame();
     }
 }

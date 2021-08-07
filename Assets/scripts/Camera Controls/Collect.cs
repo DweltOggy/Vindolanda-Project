@@ -8,13 +8,16 @@ public class Collect : MonoBehaviour
 {
     bool inProximity = false;
     public itemObject item;
+    private Color originalColor;
 
     private void Start()
     {
         if(item.objID == "REPLACE")
             item.objID = name + transform.position.ToString() + transform.eulerAngles.ToString();
+        
+        originalColor = GetComponentInChildren<MeshRenderer>().material.color;
 
-        if(Player.Instance.playerInventory.checkInventory(item.objID))
+        if (Player.Instance.playerInventory.checkInventory(item.objID))
         {
             Destroy(gameObject);
         }
@@ -36,12 +39,19 @@ public class Collect : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
+        {
             inProximity = true;
+            GetComponentInChildren<MeshRenderer>().material.color = Color.green;
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "Player")
+        {
             inProximity = false;
+            GetComponentInChildren<MeshRenderer>().material.color = originalColor;
+        }
+            
     }
 }

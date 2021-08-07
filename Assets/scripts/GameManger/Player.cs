@@ -7,13 +7,17 @@ public class Player : MonoBehaviour
 {
     public static Player Instance;
 
-    public List<Objective> objectives = new List<Objective>();
-
     public Inventory playerInventory;
     public int money = 30;
+    int startMoney;
 
     public GameObject notifier;
     public Text displayMoney;
+
+    private void Start()
+    {
+        startMoney = money;
+    }
 
     void Awake()
     {
@@ -48,9 +52,30 @@ public class Player : MonoBehaviour
 
     public void removeItem(itemObject newItem)
     {
-       
         playerInventory.removeItem(newItem);
         StartCoroutine(showNotifier(2));
+    }
+
+    public void restart()
+    {
+        playerInventory.clearInventory();
+        foreach (var comp in gameObject.GetComponents<Component>())
+        {
+            if (!(comp is Transform) && !(comp is Player))
+            {
+                Destroy(comp);
+            }
+        }
+        money = startMoney;
+
+        gameObject.AddComponent<FillJournalQuest>();
+        gameObject.AddComponent<MainQuest>();
+        gameObject.AddComponent<Quest1>();
+        gameObject.AddComponent<BarracksQuest1>();
+        gameObject.AddComponent<BathHouseQuest1>();
+        gameObject.AddComponent<TavernQuest1>();
+
+        GameController.Instance.refresh();
     }
 
     IEnumerator showNotifier(float delay)

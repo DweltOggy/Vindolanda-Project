@@ -45,6 +45,15 @@ namespace knowledge
             }
         }
 
+        public void restart()
+        {
+            foreach (var entry in enteries)
+            {
+                entry.lockEntry();
+            }
+            //Destroy(gameObject);
+        }
+
         IEnumerator showNotifier(float delay)
         {
 

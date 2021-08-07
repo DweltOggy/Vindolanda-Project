@@ -29,6 +29,11 @@ public class ShopButtons : MonoBehaviour
 
     void Start()
     {
+        populate();
+    }
+
+    public void populate()
+    {
         int loopcounter = 0;
         foreach (var item in items)
         {
