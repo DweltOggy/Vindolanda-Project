@@ -52,7 +52,7 @@ namespace objectives
                 {
                     objective.complete();
                     Destroy(objective);
-                    value.text = " ";
+                    value.text = "";
                 }
             }
             refresh();
@@ -66,8 +66,10 @@ namespace objectives
 
         public void restart()
         {
+            value.text = "";
             quizStage = 0;
-            refresh();
+            //refresh();
+            objectives.Clear();
         }
 
         public void endGame()

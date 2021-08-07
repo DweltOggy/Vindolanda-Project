@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8108925834441127934
+--- !u!1 &6841364923760101133
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,7 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8629278272718153437}
+  - component: {fileID: 6691861023715141996}
+  - component: {fileID: 6841364923760101138}
+  - component: {fileID: 6841364923760101139}
   m_Layer: 0
   m_Name: Quests
   m_TagString: Untagged
@@ -16,13 +18,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8629278272718153437
+--- !u!4 &6691861023715141996
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8108925834441127934}
+  m_GameObject: {fileID: 6841364923760101133}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.9607625, y: 1.1301223, z: 1.1919689}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -30,3 +32,118 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6841364923760101138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6841364923760101133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e20c3a37f973cc4fb9c36a6059d85f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pendant: {fileID: 11400000, guid: 74717308e047f0848a70d0f4ef9e0e42, type: 2}
+  artifact: {fileID: 11400000, guid: 58f4c3e30718aec40903a0a6dc3a8110, type: 2}
+  tavernDialogue1:
+    name: Tavern Patron
+    sentances:
+    - Hello Whats this?
+    - Oh thank you! The priestess said she'd send this to me!
+  tavernDialogue2:
+    name: Tavern Patron
+    sentances:
+    - Thank you so much!
+  quest3Dialogue1:
+    name: Livia Pola
+    sentances:
+    - Thank you for delivering the pendant!
+    - Could you also deliver this Artifact to the Bath House patron as well?
+  quest3Dialogue2:
+    name: Livia Pola
+    sentances:
+    - It would be great if you culd take that artifact to the Bath house Patron!
+  quest4Dialogue1:
+    name: Bath House Patron
+    sentances:
+    - Oh htank you it's too kind of you to bring i that to me! Tell Livia thank you!
+  quest4Dialogue2:
+    name: Bath Housee Patron
+    sentances:
+    - Thank you!
+  quest5Dialogue1:
+    name: Livia Pola
+    sentances:
+    - Thank you Lepidna! You have the kindness of the gods. Here is your reward!
+      I hope you have a good time at the party!
+  quest5Dialogue2:
+    name: Blessings of the gods!
+    sentances: []
+  BarracksDialogue3:
+    name: Gaius Marinus
+    sentances:
+    - Thatnk you! Yous saved me there... This is embarrassing but I also lost my
+      bow...
+    - Bring it back to me and I'll give you some of my pay... I thinks it's either
+      in the bath house or shrine...
+  BarracksDialogue4:
+    name: Gaius Marinus
+    sentances:
+    - You'd be helping me out a ton getting my bow...
+  BarracksDialogue5:
+    name: Gaius Marinus
+    sentances:
+    - My Bow! Livia your're a life saver!
+    - Here take this it isn't m,uch but i hope it helps!
+    - Enjoy the party!
+  BarracksDialogue6:
+    name: Gaius Marinus
+    sentances:
+    - Thank you Livia! You helped so much!
+  TavernQuest1:
+    name: Scribe
+    sentances:
+    - Oh this belongs to tertius... go on take it to him then...
+  TavernQuest2:
+    name: Scribe
+    sentances:
+    - Give that to tertius then...
+  TavernQuest3:
+    name: Tertius Cordus
+    sentances:
+    - That Scribe had it did he?
+    - Well thanks for your trouble! Here take this reward.
+  TavernQuest4:
+    name: Tertius Cordus
+    sentances:
+    - Thank you!
+  BathQuest1:
+    name: 
+    sentances: []
+  BathQuest2:
+    name: 
+    sentances: []
+  BathQuest3:
+    name: Manius Rex
+    sentances:
+    - Thank you! You're a life saver!
+    - They really wanted meat!
+    - Here's you reward!
+  BathQuest4:
+    name: Manius Rex
+    sentances:
+    - Thank you so much!
+  key: {fileID: 11400000, guid: ac0d291b982e845469d0c3803d2c27fb, type: 2}
+--- !u!114 &6841364923760101139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6841364923760101133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2322d3ba8a4c9c14a83711b77144064f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

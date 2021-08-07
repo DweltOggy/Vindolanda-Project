@@ -9,6 +9,7 @@ public class HUDUI : MonoBehaviour
    
     [SerializeField] GameObject ObjectiveCanvas;
     [SerializeField] GameObject InventoryCanvas;
+    public Animator animator;
 
     bool active = false;
 
@@ -49,9 +50,10 @@ public class HUDUI : MonoBehaviour
             
         else
         {
+            animator.SetBool("isOpen", true);
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.Confined;
-            InventoryCanvas.SetActive(true);
+            //InventoryCanvas.SetActive(true);
         }
            
     }
@@ -66,12 +68,11 @@ public class HUDUI : MonoBehaviour
         }
            
         else
-        { 
+        {
+            animator.SetBool("isOpen", false);
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
-            InventoryCanvas.SetActive(false);
-        }
-            
+            //InventoryCanvas.SetActive(false);
+        }  
     }
-
 }

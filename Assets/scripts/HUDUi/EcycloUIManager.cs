@@ -103,7 +103,7 @@ public class EcycloUIManager : MonoBehaviour
     public void Hide()
     {
         Scene scene = SceneManager.GetActiveScene();
-        if (scene.name != "MapScene")
+        if (scene.name != "MapScene" || scene.name != "StartScene")
         {
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;

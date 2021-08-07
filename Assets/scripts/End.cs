@@ -22,12 +22,15 @@ public class End : MonoBehaviour
             test.populate();
             test.gameObject.SetActive(false);
         }
-            //    DisplayInventory test = GameObject.FindObjectOfType<DisplayInventory>();
-            //    if (test)
-            //        test.restartGame();
+
+        GameObject[] invPrefabs = GameObject.FindGameObjectsWithTag("InvPrefab");
+        foreach(var prefab in invPrefabs)
+        {
+            Destroy(prefab);
+        }
+        objectives.GameController.Instance.restart();
         endCanvas.SetActive(false);
         LevelLoader.Instance.loadLevel("StartScene");
-
     }
 
 }
