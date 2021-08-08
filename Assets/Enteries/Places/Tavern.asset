@@ -14,14 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 4
   locked: 1
-  name: Tavern
-  description: TAverns served hot meals and alchol.
-  expandedDescription: Test Description Test Description Test Description Test Description
-    Test Description Test Description Test Description Test Description Test Description
-    Test Description Test Description Test Description Test Description Test Description
-    Test Description Test Description Test Description Test Description Test Description
-  funFacts: 'Fun Facts:
+  name: Roman Leisure
+  description: Much like you today Romans enjoyed their leisure time!
+  expandedDescription: The Romans loved their leisure activities which they indulged
+    in all across their Empire. Everyone has heard of Gladiators, right? This was
+    one of their favourite passtimes, they would go to one of their many amphitheatres
+    to watch the fighting. The Romans would also engage in more gentle entertainment
+    such as board games, card games and dice games. The remains of dice were found
+    at Vindolanda, which were thought to have been used to provide entertainment
+    for the soldiers as they rested in the barracks.
+  funFacts: '1) Some gladitorial fights would even include wild animals such as Lions
+    and Bears!
 
-    -FAct'
-  thumb: {fileID: 21300000, guid: 812e0bc2127a4c24abbe024bdd6d8bd4, type: 3}
-  image: {fileID: 21300000, guid: ffcc20e3d687db942816b6b6e75fed24, type: 3}
+    2) Romans were a fan of sport and athletics such as: Wrestling,
+    Boxing, Throwing and Jumping. All sports we still love today!'
+  thumb: {fileID: 21300000, guid: fb364b777cbc7714880b7eb0cf2ba21e, type: 3}
+  image: {fileID: 21300000, guid: fb364b777cbc7714880b7eb0cf2ba21e, type: 3}

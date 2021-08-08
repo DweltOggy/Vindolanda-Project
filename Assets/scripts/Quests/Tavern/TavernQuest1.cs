@@ -29,10 +29,10 @@ public class TavernQuest1 : Objective
 
     public override void complete()
     {
-        Player.Instance.money += reward;
+        Player.Instance.addMoney(reward);
 
         knowledge.Encyclopedia.Instance.unlockEntry(id);
-        FindObjectOfType<EcycloUIManager>().updateUI();
+        //FindObjectOfType<EcycloUIManager>().updateUI();
 
         if (!Player.Instance.gameObject.GetComponent<TavernQuest2>())
         {

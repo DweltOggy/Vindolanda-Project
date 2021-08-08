@@ -22,6 +22,6 @@ public class FillJournalQuest : Objective
 
     public override void complete()
     {
-        Player.Instance.money += reward;
+        Player.Instance.addMoney(reward);
     }
 }

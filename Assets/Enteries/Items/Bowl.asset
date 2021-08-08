@@ -12,7 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b07cc188e8cd7640905621179275f59, type: 3}
   m_Name: Bowl
   m_EditorClassIdentifier: 
-  id: 0
-  locked: 0
-  name: Bowl
+  id: 8
+  locked: 1
+  name: Potttery at Vindolanda
   description: 
+  expandedDescription: All throughout the Roman Empire, pottery has been used in
+    enormous quantities. Pottery such as vases and bowls were used to store liquids
+    such as wine and olive oil. They would have been used fired clay or terracotta
+    in order to produced the best ceramics possible. Make sure to go and check out
+    th extensive amount recovered from the Vindolanda site, in the museum.
+  funFacts: '1) Roman pottery can be divided in two main categories, namely fine
+    ware and coarse ware!
+
+'
+  thumb: {fileID: 21300000, guid: 37689a87a9d1a2f429fda0c24ecbb2db, type: 3}
+  image: {fileID: 21300000, guid: 37689a87a9d1a2f429fda0c24ecbb2db, type: 3}

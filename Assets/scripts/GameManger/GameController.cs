@@ -33,21 +33,33 @@ namespace objectives
             DontDestroyOnLoad(this.gameObject);
         }
 
-        void OnGUI()
+        //void OnGUI()
+        //{
+        //    foreach(var objective in objectives)
+        //    {
+        //        string message = objective.message();
+        //        if(!value.text.Contains(message))
+        //            value.text +="- " + message + "\n \n";
+        //    }
+        //    percentage.text = "Journal (J) \n" + Encyclopedia.Instance.percentageComplete() + "%";
+        //}
+
+        public void removeString(string A)
         {
-            foreach(var objective in objectives)
-            {
-                string message = objective.message();
-                if(!value.text.Contains(message))
-                    value.text +="- " + message + "\n \n";
-            }
-            percentage.text = "Journal (J) \n" + Encyclopedia.Instance.percentageComplete() + "%";
+            value.text.Replace(A, string.Empty);
         }
+
 
         void Update()
         {
+            refresh();
             foreach (var objective in objectives)
             {
+
+                string message = objective.message();
+                if (!value.text.Contains(message))
+                    value.text += "- " + message + "\n \n";
+
                 if (objective.Achieved())
                 {
                     objective.complete();
@@ -55,7 +67,7 @@ namespace objectives
                     value.text = "";
                 }
             }
-            refresh();
+            percentage.text = "Journal (J) \n" + Encyclopedia.Instance.percentageComplete() + "%";
         }
 
         public void refresh()
@@ -68,13 +80,11 @@ namespace objectives
         {
             value.text = "";
             quizStage = 0;
-            //refresh();
             objectives.Clear();
         }
 
         public void endGame()
         {
-            //value.text = " ";
             endCanvas.SetActive(true);
         }
     }

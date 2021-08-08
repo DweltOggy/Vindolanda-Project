@@ -61,12 +61,12 @@ public class ShopButtons : MonoBehaviour
     {
         access info = button.GetComponentInParent<access>();
 
-        if(Player.Instance.money >= info.item.value)
+        if(Player.Instance.moneyVal() >= info.item.value)
         {
             Player.Instance.addItem(info.item);
             knowledge.Encyclopedia.Instance.unlockEntry(info.item.databaseEntry);
-            FindObjectOfType<EcycloUIManager>().updateUI();
-            Player.Instance.money -= info.item.value;
+            //FindObjectOfType<EcycloUIManager>().updateUI();
+            Player.Instance.subMoney(info.item.value);
             Destroy(button.gameObject);//.SetActive(false);
         }
     }

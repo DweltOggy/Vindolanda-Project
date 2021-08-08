@@ -27,9 +27,9 @@ public class BarracksQuest1 : Objective
 
     public override void complete()
     {
-        Player.Instance.money += reward;
+        Player.Instance.addMoney(reward);
         knowledge.Encyclopedia.Instance.unlockEntry(22);
-        FindObjectOfType<EcycloUIManager>().updateUI();
+        //FindObjectOfType<EcycloUIManager>().updateUI();
         if (!Player.Instance.gameObject.GetComponent<BarracksQuest2>())
         {
             Player.Instance.gameObject.AddComponent<BarracksQuest2>();

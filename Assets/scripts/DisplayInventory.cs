@@ -45,21 +45,6 @@ public class DisplayInventory : MonoBehaviour
                 itemsDisplayed.Add(inventory.items[i], obj);
             }
         }
-        //List<itemObject> toRemove = new List<itemObject>();
-        //foreach(KeyValuePair<itemObject,GameObject> display in itemsDisplayed)
-        //{
-        //    if(!inventory.checkInventory(display.Key.objID))
-        //    {
-        //        toRemove.Add(display.Key);
-        //        //itemsDisplayed.Remove(display.Key);
-        //    }
-        //}
-
-        //foreach(itemObject item in toRemove)
-        //{
-        //    item.prefab.SetActive(false);
-        //    itemsDisplayed.Remove(item);
-        //}
     }
 
     public void restartGame()

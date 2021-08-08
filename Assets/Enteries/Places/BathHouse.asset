@@ -14,16 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1
   locked: 1
-  name: Bath House
+  name: Roman Bath Houses
   description: The place where both soldiers and civilians could come to rest and
     relax.
-  expandedDescription: The bath house! Test Description Test Description Test Description
-    Test Description Test Description Test Description Test Description Test Description
-    Test Description Test Description Test Description Test Description Test Description
-    Test Description Test Description Test Description Test Description Test Description
-    Test Description
-  funFacts: 'Fun Facts:
+  expandedDescription: '"Bathing was extremely important to Roman society, all social
+    classes could be found bathing in Bath houses. Bathing was not a private activity,
+    many people would spend time bathing together, it was considered a very social
+    activity. At first they wee separated for men and women but eventually in the
+    first century AD they had become mixed.
 
-    - Fact 1
+    Small bathhouses were known as Balneum
+    which were often found in peoples houses but could be opened to the public for
+    a fee. larger Bath houses like the one found in Vindolanda were called Thermae
+    and were open to the public. in 1715 it was found that the Bath house had an
+    altar there which would have been used for worship and prayer."'
+  funFacts: '1) Some large Bathhouses were built on hot springs so the water would
+    be nice and warm!
 
-    - Fact 2'
+    2) Bath houses were known for including reading rooms,
+    libraries, food and booths that sold perfume!'
+  thumb: {fileID: 21300000, guid: e2dd2d629e2fa0e428dbe44661585a7d, type: 3}
+  image: {fileID: 21300000, guid: e2dd2d629e2fa0e428dbe44661585a7d, type: 3}

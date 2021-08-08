@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 9
   locked: 1
-  name: Rope
+  name: Roman Rope
   description: 
-  expandedDescription: 
+  expandedDescription: Rope was used in many aspects of Roman life, whether that
+    be to carry and bind materials or when used to make clothes. Rope was probably
+    made from flax or hemp.
   funFacts: 
+  thumb: {fileID: 21300000, guid: 36d90ab0736fe954c99c12f9900eaa25, type: 3}
+  image: {fileID: 21300000, guid: 36d90ab0736fe954c99c12f9900eaa25, type: 3}

@@ -35,12 +35,12 @@ public class Quest1  : Objective
     {
         Player.Instance.addItem(delivery);
         knowledge.Encyclopedia.Instance.unlockEntry(23);
-        FindObjectOfType<EcycloUIManager>().updateUI();
+        //FindObjectOfType<EcycloUIManager>().updateUI();
         knowledge.Encyclopedia.Instance.unlockEntry(delivery.databaseEntry);
-        FindObjectOfType<EcycloUIManager>().updateUI();
+        //FindObjectOfType<EcycloUIManager>().updateUI();
 
-        Player.Instance.money += reward;
-        if(!Player.Instance.gameObject.GetComponent<Quest2>())
+        Player.Instance.addMoney(reward);
+        if (!Player.Instance.gameObject.GetComponent<Quest2>())
         {
             Player.Instance.gameObject.AddComponent<Quest2>();
         }

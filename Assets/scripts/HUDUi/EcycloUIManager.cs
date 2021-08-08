@@ -67,6 +67,7 @@ public class EcycloUIManager : MonoBehaviour
             active = true;
             Show();
         }
+        updateUI();
     }
 
     public void updateUI()
@@ -102,13 +103,6 @@ public class EcycloUIManager : MonoBehaviour
 
     public void Hide()
     {
-        Scene scene = SceneManager.GetActiveScene();
-        if (scene.name != "MapScene" || scene.name != "StartScene")
-        {
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
-        }
-
         ExpandLayout.SetActive(false);
         MainCanvas.SetActive(false);
     }
@@ -122,6 +116,7 @@ public class EcycloUIManager : MonoBehaviour
     {
         if(button.GetComponentInParent<access>().info.locked == false)
         {
+            Debug.Log("We're in lads");
             titleUIText.text = button.GetComponentInParent<access>().info.name;
             descriptionUIText.text = button.GetComponentInParent<access>().info.expandedDescription;
             factsUIText.text = button.GetComponentInParent<access>().info.funFacts;

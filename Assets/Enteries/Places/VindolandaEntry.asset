@@ -16,14 +16,28 @@ MonoBehaviour:
   locked: 1
   name: Vindolanda
   description: The Roman fort and village of vindolnada and the setting of our game.
-  expandedDescription: Well this is a test for me to see if I can access this. There
-    will be alsorts of fun info herer one day! Test Description Test Description
-    Test Description Test Description Test Description Test Description Test Description
-    Test Description Test Description Test Description Test Description Test Description
-    Test Description Test Description Test Description Test Description Test Description
-    Test Description Test Description
-  funFacts: 'Fun Facts:
+  expandedDescription: 'Vindolanda was a Roman fort in Northumbria, Northern England.
+    It sits just south of Hadrians Wall, a large wall that ran from coast to coast,
+    set to protect Northern Engalnd. Vindolanda started out as a small fort made
+    from wood and turf, over the next 100 years they made the transition from early
+    wooden forts to one made from stone. Several circular stone huts were built between
+    208 to 211AD- the remains of these can still be seen at the forts site today.
+    Make sure to keep a look out! Over the years, the fort grew and grew, even including
+    a Vicus which was a village that was self-run and a large Bath House that would
+    have been used by the soldiers and villagers. At the height of Vindolandas use,
+    the fort could hold anywhere up to 1,000 soldiers.
 
-    -This is a Test!
+    The site is filled with
+    exciting findings such as keys, combs, pots and even a pair of Roman boxing gloves!
+    All are available for you to view at Chesterholm Museum, the museum at Vindolanda.
+    So make sure to plan your next visit!'
+  funFacts: '1) Did you know that Vindolanda means ''White Lawns'' or ''White Fields''
 
-    -That means we''re just testing!'
+    2)
+    Soldiers were sent from all over Europe were garrissoned here. These included
+    solders from Belgium, Germany and France.
+
+    3) The fort included buildings
+    such as shops, a tavern, a bath house and houses.'
+  thumb: {fileID: 21300000, guid: c2e5f0aac960bf64f9d8554db7182faa, type: 3}
+  image: {fileID: 21300000, guid: c2e5f0aac960bf64f9d8554db7182faa, type: 3}

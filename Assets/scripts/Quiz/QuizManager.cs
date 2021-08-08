@@ -99,8 +99,8 @@ public class QuizManager : MonoBehaviour
             winLossText.text = "You Won this Time!";
             if (objectives.GameController.Instance)
             {
+                Player.Instance.addMoney(reward * objectives.GameController.Instance.quizStage);
                 objectives.GameController.Instance.quizStage++;
-                Player.Instance.money += reward;
             }
             
         }

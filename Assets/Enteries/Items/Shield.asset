@@ -12,9 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b07cc188e8cd7640905621179275f59, type: 3}
   m_Name: Shield
   m_EditorClassIdentifier: 
-  id: 0
+  id: 10
   locked: 1
-  name: 
+  name: Roman Shield
   description: 
-  expandedDescription: 
-  funFacts: 
+  expandedDescription: 'There were three main types of shields used by the Romans.
+    those being : Scutum (a large square shield), Parma (s circular shield measuring
+    three Roman feet across) and a Caetra (A light shield made from wood and leather).
+    The shield was a vital piece of equipment for any Roman soldier s it provided
+    vital protection in battle. make sure to check out the shields recovered from
+    the Vindolanda site.'
+  funFacts: 1) Shields were often symmetrical in design and features colours of red
+    whoch represented Mars, The God of War. Colours such as yellow, white and gold
+    were also used!
+  thumb: {fileID: 21300000, guid: 7811693df0780714ba77dc6061d19c2b, type: 3}
+  image: {fileID: 21300000, guid: 7811693df0780714ba77dc6061d19c2b, type: 3}

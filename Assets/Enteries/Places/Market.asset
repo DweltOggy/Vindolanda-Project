@@ -16,12 +16,18 @@ MonoBehaviour:
   locked: 1
   name: Market
   description: A place where the citizens could come to buy goods.
-  expandedDescription: Test Description Test Description Test Description Test Description
-    Test Description Test Description Test Description Test Description Test Description
-    Test Description Test Description Test Description Test Description Test Description
-    Test Description Test Description Test Description Test Description Test Description
-  funFacts: 'Fun Facts:
+  expandedDescription: A large party of Roman wealth came from Roman Trade- this
+    is how they traded fish, fruit, vegetables, wine, herbs, clothes, materials and
+    even horses. Trade was often ran by slaves, they did most of the hard work such
+    as transporting a lot of the goods to and from market stalls. They were also
+    expected to travel city to city along the long and straight Roman roads. Trade
+    was also inter national, many of the Roman goods were traded over seas, all around
+    the world.
+  funFacts: '1) As time went on the Romans would trade more and more special goods.
+    These included trading wine and olive oil to Italy and grain to Egypt!
 
-    -Facts
-
-    -Facts 2'
+    2)
+    Trade was an excellent way of maintaining the peace between countries and the
+    people'
+  thumb: {fileID: 21300000, guid: d3b67c16830abbd4194ef41d2fd593bc, type: 3}
+  image: {fileID: 21300000, guid: d3b67c16830abbd4194ef41d2fd593bc, type: 3}

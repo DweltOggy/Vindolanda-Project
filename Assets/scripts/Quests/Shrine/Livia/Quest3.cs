@@ -42,8 +42,8 @@ public class Quest3 : Objective
 
         Player.Instance.addItem(delivery);
         knowledge.Encyclopedia.Instance.unlockEntry(delivery.databaseEntry);
-        FindObjectOfType<EcycloUIManager>().updateUI();
-        Player.Instance.money += reward;
+        //FindObjectOfType<EcycloUIManager>().updateUI();
+        Player.Instance.addMoney(reward);
         if (!Player.Instance.gameObject.GetComponent<Quest4>())
         {
             Player.Instance.gameObject.AddComponent<Quest4>();

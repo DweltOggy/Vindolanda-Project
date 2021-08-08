@@ -39,8 +39,8 @@ public class TavernQuest2 : Objective
     {
         Player.Instance.addItem(delivery);
         knowledge.Encyclopedia.Instance.unlockEntry(delivery.databaseEntry);
-        FindObjectOfType<EcycloUIManager>().updateUI();
-        Player.Instance.money += reward;
+        //FindObjectOfType<EcycloUIManager>().updateUI();
+        Player.Instance.addMoney(reward);
         if (!Player.Instance.gameObject.GetComponent<TavernQuest3>())
         {
             Player.Instance.gameObject.AddComponent<TavernQuest3>();

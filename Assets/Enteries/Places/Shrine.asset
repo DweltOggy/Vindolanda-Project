@@ -16,12 +16,18 @@ MonoBehaviour:
   locked: 1
   name: Temple
   description: The temple at vindolnda.
-  expandedDescription: Test Description Test Description Test Description Test Description
-    Test Description Test Description Test Description Test Description Test Description
-    Test Description Test Description Test Description Test Description Test Description
-    Test Description Test Description Test Description Test Description Test Description
-  funFacts: 'Fun Facts:
+  expandedDescription: The Romans thought themselves to be highly religious people
+    and a lof of their actions were a direct refelction os their relationship to
+    their Gods. We have all heard of many of the famous Gods such as Venus, Apollo
+    and Neptune. They all served a special purpose in the lives of the Romans who
+    wouldleave offerings at their altars, where they would worship and pray to their
+    Gods. There would be many public altars/temples that would be used by the lower
+    classes but the upper classes would be more fortunate to have them in their homes.
+    Make sure to look for where the altar would have been when you visit Vindolanda!
+  funFacts: '1) Each temple that the Romans worshipped at would be dedicated to one
+    God each. A temple where they worshipped all of the Gods was called a Pantheon.
 
-    - Facts
-
-    - More facts'
+    2)
+    Romans even sacrificed animals in their temples!'
+  thumb: {fileID: 21300000, guid: 4d0296a154fdc9945b0501ebf0aee42b, type: 3}
+  image: {fileID: 21300000, guid: 4d0296a154fdc9945b0501ebf0aee42b, type: 3}

@@ -12,9 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b07cc188e8cd7640905621179275f59, type: 3}
   m_Name: Artiffact
   m_EditorClassIdentifier: 
-  id: 0
+  id: 19
   locked: 1
   name: 
   description: 
-  expandedDescription: 
-  funFacts: 
+  expandedDescription: Religion was very important to the Romans and to practice
+    Christianity could become very dangerous for that person. Christianity was banned
+    and punished for many years. Christians would have to meet in secret, even hiding
+    underground in order to practice their chosen religion. In AD 313, the Emperor
+    Constantine made Christianity legal  and in AD 391 the worship of other gods
+    was mad illegal.
+  funFacts: 1) Romans even fed Christians to lions as entertainment!
+  thumb: {fileID: 21300000, guid: aee50c4cf51e4e042a22ce6a855e4878, type: 3}
+  image: {fileID: 21300000, guid: aee50c4cf51e4e042a22ce6a855e4878, type: 3}

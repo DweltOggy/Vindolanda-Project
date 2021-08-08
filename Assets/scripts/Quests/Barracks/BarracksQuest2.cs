@@ -21,7 +21,7 @@ public class BarracksQuest2 : Objective
     public override void complete()
     {
 
-        Player.Instance.money += reward;
+        Player.Instance.addMoney(reward);
         if (!Player.Instance.gameObject.GetComponent<BarracksQuest3>())
         {
             Player.Instance.gameObject.AddComponent<BarracksQuest3>();

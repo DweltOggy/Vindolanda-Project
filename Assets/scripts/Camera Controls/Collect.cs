@@ -28,7 +28,7 @@ public class Collect : MonoBehaviour
         if (inProximity && Input.GetKeyDown(KeyCode.E))
         {
             Encyclopedia.Instance.unlockEntry(item.databaseEntry);
-            FindObjectOfType<EcycloUIManager>().updateUI();
+            //FindObjectOfType<EcycloUIManager>().updateUI();
 
             if(item)
                 Player.Instance.addItem(item);

@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 11400000, guid: c7e0c0456cde9754397413f1a4407f40, type: 2}
-  money: 1000
+  money: 50
   notifier: {fileID: 0}
   displayMoney: {fileID: 0}
 --- !u!114 &5260444947062489689

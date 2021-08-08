@@ -12,9 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b07cc188e8cd7640905621179275f59, type: 3}
   m_Name: BUcket
   m_EditorClassIdentifier: 
-  id: 0
+  id: 12
   locked: 1
   name: 
   description: 
-  expandedDescription: 
+  expandedDescription: Buckets were a surprisingly vital part of Roman life. they
+    were used to carry water fro drinking but also in the events of a fire the Vigiles
+    (firefighters) woulod use them when attending a fire. They were also important
+    for Roman hygiene, which is another important part of Roman life.
   funFacts: 
+  thumb: {fileID: 21300000, guid: abce17d3c5d654a4b9fc9dc90b263050, type: 3}
+  image: {fileID: 21300000, guid: abce17d3c5d654a4b9fc9dc90b263050, type: 3}

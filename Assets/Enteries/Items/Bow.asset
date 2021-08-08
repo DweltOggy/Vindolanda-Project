@@ -12,9 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b07cc188e8cd7640905621179275f59, type: 3}
   m_Name: Bow
   m_EditorClassIdentifier: 
-  id: 0
+  id: 14
   locked: 1
-  name: 
+  name: Hunting
   description: 
-  expandedDescription: 
-  funFacts: 
+  expandedDescription: Sagittarii is the latin word for archers and was used by the
+    Romans. Sagittariorum was used when talking about infantry or cavalry that used
+    a special archers. Romans used composite bow, although they started their training
+    using simple wooden bows. Most archers were found on foot however you would be
+    able to find some archers on horseback, There were no archers stationed at Vindolanda,
+    however there were many stationed at Carvoran Fort (Magna) on Hadrians Wall to
+    the North. Make sure to visit the Roman Army Museum when you come to the area
+    to visit Vindolanda.
+  funFacts: 1) Their composite bows were made from wood, bone, horn and sinw which
+    made them very strong and even springy!
+  thumb: {fileID: 21300000, guid: 2f9e355534a76264086e0d35ad25980f, type: 3}
+  image: {fileID: 21300000, guid: 2f9e355534a76264086e0d35ad25980f, type: 3}

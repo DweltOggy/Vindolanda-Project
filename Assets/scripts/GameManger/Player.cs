@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public static Player Instance;
 
     public Inventory playerInventory;
-    public int money = 30;
+    [SerializeField] int money = 30;
     int startMoney;
 
     public GameObject notifier;
@@ -48,6 +48,21 @@ public class Player : MonoBehaviour
         SoundManager.Instance.Play("Alert");
         playerInventory.addItem(newItem);
         StartCoroutine(showNotifier(2));
+    }
+
+    public int moneyVal()
+    {
+        return money;
+    }
+
+    public void addMoney(int value)
+    {
+        money += value;
+    }
+
+    public void subMoney(int value)
+    {
+        money -= value;
     }
 
     public void removeItem(itemObject newItem)

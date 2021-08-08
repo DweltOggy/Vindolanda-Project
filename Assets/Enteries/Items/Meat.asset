@@ -12,9 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b07cc188e8cd7640905621179275f59, type: 3}
   m_Name: Meat
   m_EditorClassIdentifier: 
-  id: 0
+  id: 17
   locked: 1
-  name: 
+  name: Roman Diet
   description: 
-  expandedDescription: 
-  funFacts: 
+  expandedDescription: 'The roman diet was generally quite healthy, they primarily
+    ate cereals and legumes. The sides would include vegetables, cheese, meat and
+    fish. The sauces could me made from fermented fish, herbs, spices, honey and
+    vinegar. There was very little ways to keep food cold so the food that they ate
+    was dependant on what was fresh and readily available.
+
+    Romans generally
+    ate quite lavishly if you were upper class. However the lower classes would eat
+    legumes, grains, bread, eggs and cheese of a lower and cheaper quality.'
+  funFacts: '1) Roman Legions staple ration was wheat, from this you could make grain.
+    They would also be supplied with rations of bread, vegetables and meats!
+
+    2)
+    A Gladiators diet was much more grim, theyw ould eat wheat, barley and beans!'
+  thumb: {fileID: 21300000, guid: 8c63dea57acaa46439254442a90e33c4, type: 3}
+  image: {fileID: 21300000, guid: 8c63dea57acaa46439254442a90e33c4, type: 3}

@@ -12,9 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b07cc188e8cd7640905621179275f59, type: 3}
   m_Name: toys
   m_EditorClassIdentifier: 
-  id: 0
-  locked: 0
-  name: toys
+  id: 15
+  locked: 1
+  name: Roman Toys and Games
   description: 
-  expandedDescription: 
-  funFacts: 
+  expandedDescription: 'Roman children loved to play with their toys just like the
+    children of today. They played with dolls, along with playhouses, wooden horses,
+    play swords, bells, kites and carts. all of these toys were hand made, either
+    by the parents/family or bought/traded. Girls loved to play with dolls, made
+    from rags if you were poor or wax and clay. Boys loved to think about going to
+    war just like their brothers, uncles and fathers so they would play with wooden
+    shields and swords. There were even toys for babies such as rattles and balls
+    made from wood.
+
+    Romans also played many games such as Battledore  which
+    is very similar to badminton, they played lots of ball games and a game that
+    resembled hockey. Dice games, board games and card games were also very popular.
+    Remnants of these can be found at the Vindolanda museum'
+  funFacts: '1) Did you know that Yo-yos were very popular toys used by Roman children.
+
+    2)
+    Swimming was also very popular and was considered a fun game to play in Roman
+    times'
+  thumb: {fileID: 21300000, guid: 6669ea5b68ebe2c428a8ccfa01f9e246, type: 3}
+  image: {fileID: 21300000, guid: 6669ea5b68ebe2c428a8ccfa01f9e246, type: 3}

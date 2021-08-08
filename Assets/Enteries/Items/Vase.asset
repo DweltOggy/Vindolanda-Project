@@ -12,9 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b07cc188e8cd7640905621179275f59, type: 3}
   m_Name: Vase
   m_EditorClassIdentifier: 
-  id: 0
+  id: 13
   locked: 1
-  name: 
+  name: Roman Art
   description: 
-  expandedDescription: 
-  funFacts: 
+  expandedDescription: Roman art was was something that was enjoyed by many in society
+    but some cold be considered a luxxury item. These were made of metal, gems, ivory
+    and glass. Other forms of art included sculptures, paintings and decorative coins.
+    A large amount of sculptures have survived over the years and can be found at
+    many museums and historic sites across the country however there are very few
+    paintings that actually survived. Many examples of beautiful Roman art that are
+    displayed in the museum at Vindolanda when you next visit!
+  funFacts: '1) The Romans were famous for their beautiful mosaics, these could be
+    found at the floors of villas and bath houses!
+
+    2) Art can also be seen in
+    many of the Roman buildings, many of which can still be seen today which would
+    make them 1000s of years old!'
+  thumb: {fileID: 21300000, guid: 2df8ec7f7e4f8c9499bf93ffd55cce08, type: 3}
+  image: {fileID: 21300000, guid: 2df8ec7f7e4f8c9499bf93ffd55cce08, type: 3}

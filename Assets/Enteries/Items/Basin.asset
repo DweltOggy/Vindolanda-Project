@@ -12,9 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b07cc188e8cd7640905621179275f59, type: 3}
   m_Name: Basin
   m_EditorClassIdentifier: 
-  id: 0
+  id: 11
   locked: 1
-  name: 
-  description: 
-  expandedDescription: 
-  funFacts: 
+  name: Roman Daily Life
+  description: Learn more about roamn daily life!
+  expandedDescription: "Roman daily life varied from person to person and was often
+    dependent on class and gender. It was quite typical for girls to stay at home
+    with their mothers and tend to the home whilst the boys attended school. In school
+    they learned how to speak, write, tell time, use and count money and other lessons
+    that were designed to help them day-to-day.\nThere were many jobs that people
+    may have had in Roman times such as farming, baking, building, trading and clothes
+    making, doctors, teachers, writers, lawyers and soldiers. Although most people
+    sopped working when it got to 12pm, only working 6 hours! \nLots of time was
+    spent socialising and on entertainment. Romans valued their leisure time and
+    used this to pursue their interests. This could be with dancing, sports, reading,
+    art and music."
+  funFacts: '1) Romans loved food and dinner time. They would eat meals of wheatmeal
+    porridge, salads, eggs, breads, seafood and much more. with desser being fruit
+    and sweet cakes. Sounds so tasty!
+
+    2) Did you know that when a Roman was
+    hosting a dinner party that they could have as many as seven different courses?'
+  thumb: {fileID: 21300000, guid: b9b0e6400b91cfa40a5a6b4539878fc6, type: 3}
+  image: {fileID: 21300000, guid: b9b0e6400b91cfa40a5a6b4539878fc6, type: 3}

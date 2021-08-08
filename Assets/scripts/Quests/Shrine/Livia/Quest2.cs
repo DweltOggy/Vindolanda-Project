@@ -69,8 +69,8 @@ public class Quest2 : Objective
 
     public override void complete()
     {
-        
-        Player.Instance.money += reward;
+
+        Player.Instance.addMoney(reward);
         Player.Instance.removeItem(delivery);
 
         if (!Player.Instance.gameObject.GetComponent<Quest3>())

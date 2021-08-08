@@ -16,17 +16,18 @@ MonoBehaviour:
   locked: 1
   name: Lepidna
   description: Our main character and the wife of the comnader of the fort
-  expandedDescription: Lepidna! Test Description Test Description Test Description
-    Test Description Test Description Test Description Test Description Test Description
-    Test Description Test Description Test Description Test Description Test Description
-    Test Description Test Description Test Description Test Description Test Description
-    Test Description
-  funFacts: 'Fun Facts:
+  expandedDescription: 'The wooden tablets found at Vindolanda were the first known
+    surviving examples of the use of ink letters in the time of the Romans. The tablets
+    were maded out of wood, specificaly made from nearby trees in the Northumbria
+    area. Over 500 tablets have been excavated from the site and have given an excellent
+    view into the life of Romans, specifically Vindolanda. You play as Sulpicia Lepidina
+    in the game who is mentioned on tablet 291 and was written around AD 100! It
+    was written by Claudia Severa and was inviting Sulpicia to a birthday party. '
+  funFacts: '1) The invitation is one of the earliest known examples of writing in
+    Latin by a woman!
 
-    - Fact 1
-
-    - Fact 2
-
-    - Fact 3
-
-    - FAct 4'
+    2) he tablets are written in forms of Roman cursive script,
+    considered to be the forerunner of joined-up writing, which varies in style depending
+    on the author!'
+  thumb: {fileID: 21300000, guid: a7cdc5d176a51ef41aae4a5bb84e1910, type: 3}
+  image: {fileID: 21300000, guid: a7cdc5d176a51ef41aae4a5bb84e1910, type: 3}

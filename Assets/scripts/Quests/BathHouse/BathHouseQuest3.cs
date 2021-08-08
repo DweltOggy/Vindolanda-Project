@@ -33,7 +33,7 @@ public class BathHouseQuest3 : Objective
 
     public override void complete()
     {
-        Player.Instance.money += reward;
+        Player.Instance.addMoney(reward);
     }
 
     private void OnEnable()

@@ -1348,6 +1348,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5260444947062489664, guid: e3e35159cc19fb74ca79a76f8976e5ac, type: 3}
+      propertyPath: money
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5260444947062489664, guid: e3e35159cc19fb74ca79a76f8976e5ac, type: 3}
       propertyPath: notifier
       value: 
       objectReference: {fileID: 1985828999}
@@ -1459,6 +1463,14 @@ PrefabInstance:
     - target: {fileID: 4226052012042166885, guid: fc7f932302bd9994eb32cf64750995cd, type: 3}
       propertyPath: m_Name
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4226052012332109599, guid: fc7f932302bd9994eb32cf64750995cd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4226052012574653354, guid: fc7f932302bd9994eb32cf64750995cd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc7f932302bd9994eb32cf64750995cd, type: 3}

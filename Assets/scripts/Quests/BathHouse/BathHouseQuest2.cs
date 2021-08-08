@@ -18,7 +18,7 @@ public class BathHouseQuest2 : Objective
 
     public override void complete()
     {
-        Player.Instance.money += reward;
+        Player.Instance.addMoney(reward);
         if (!Player.Instance.gameObject.GetComponent<BathHouseQuest3>())
         {
             Player.Instance.gameObject.AddComponent<BathHouseQuest3>();

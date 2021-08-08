@@ -26,9 +26,9 @@ public class BathHouseQuest1 : Objective
 
     public override void complete()
     {
-        Player.Instance.money += reward;
+        Player.Instance.addMoney(reward);
         knowledge.Encyclopedia.Instance.unlockEntry(25);
-        FindObjectOfType<EcycloUIManager>().updateUI();
+        //FindObjectOfType<EcycloUIManager>().updateUI();
         if (!Player.Instance.gameObject.GetComponent<BathHouseQuest2>())
         {
             Player.Instance.gameObject.AddComponent<BathHouseQuest2>();

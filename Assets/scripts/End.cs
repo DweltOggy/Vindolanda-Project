@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class End : MonoBehaviour
 {
@@ -12,25 +13,66 @@ public class End : MonoBehaviour
 
     public void restart()
     {
-        Player.Instance.restart();
-        knowledge.Encyclopedia.Instance.restart();
-        objectives.GameController.Instance.restart();
 
-        ShopButtons test = GameObject.FindObjectOfType<ShopButtons>();
-        if (test)
-        {
-            test.populate();
-            test.gameObject.SetActive(false);
-        }
-
-        GameObject[] invPrefabs = GameObject.FindGameObjectsWithTag("InvPrefab");
-        foreach(var prefab in invPrefabs)
-        {
-            Destroy(prefab);
-        }
-        objectives.GameController.Instance.restart();
         endCanvas.SetActive(false);
         LevelLoader.Instance.loadLevel("StartScene");
     }
+
+
+    //private void Awake()
+    //{
+    //    SceneManager.sceneLoaded += LoadedScene;
+    //}
+
+    //private void OnDisable()
+    //{
+    //    SceneManager.sceneLoaded -= LoadedScene;
+    //}
+
+    private void OnLevelWasLoaded(int level)
+    {
+        if(level == 0)
+        {
+            Player.Instance.restart();
+            knowledge.Encyclopedia.Instance.restart();
+            objectives.GameController.Instance.restart();
+
+            ShopButtons test = GameObject.FindObjectOfType<ShopButtons>();
+            if (test)
+            {
+                test.populate();
+                test.gameObject.SetActive(false);
+            }
+
+            GameObject[] invPrefabs = GameObject.FindGameObjectsWithTag("InvPrefab");
+            foreach (var prefab in invPrefabs)
+            {
+                DestroyImmediate(prefab);
+            }
+        }
+    }
+
+    //private void LoadedScene(Scene scene, LoadSceneMode mode)
+    //{
+    //    if(scene.name == "StartScene")
+    //    {
+    //        Player.Instance.restart();
+    //        knowledge.Encyclopedia.Instance.restart();
+    //        objectives.GameController.Instance.restart();
+
+    //        ShopButtons test = GameObject.FindObjectOfType<ShopButtons>();
+    //        if (test)
+    //        {
+    //            test.populate();
+    //            test.gameObject.SetActive(false);
+    //        }
+
+    //        GameObject[] invPrefabs = GameObject.FindGameObjectsWithTag("InvPrefab");
+    //        foreach(var prefab in invPrefabs)
+    //        {
+    //            DestroyImmediate(prefab);
+    //        }
+    //    }
+    //}
 
 }

@@ -12,7 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b07cc188e8cd7640905621179275f59, type: 3}
   m_Name: Helemt
   m_EditorClassIdentifier: 
-  id: 0
-  locked: 0
-  name: Helmet
-  description: test
+  id: 7
+  locked: 1
+  name: Roman Armour
+  description: Romans wore many armour pieces!
+  expandedDescription: Roman armour was named for three differet types - Lorica segmentata
+    (Body armour) and Lorica hamata (mail armour) and Lorica squamata (scale armour).
+    The body armour was typically made from ferrous strips and leather straps and
+    strips. The mail armour was used for heavy legionnaires and made from iron or
+    sometimes bronze. The scale armour was used during the Roman Republic and made
+    from small metal scales and fabric. These will have been used by standard bearers,
+    auxillary, centurians, cavalry and even musicians.
+  funFacts: '1) Did you know- There were two types of soldier: the roman legionary
+    and the auxiliaries. The legionaries were the very best soldiers and the auxiliaries
+    were  non-Romans!
+
+'
+  thumb: {fileID: 21300000, guid: 5a81310db4bc0be4b86ff75328b55e83, type: 3}
+  image: {fileID: 21300000, guid: 5a81310db4bc0be4b86ff75328b55e83, type: 3}

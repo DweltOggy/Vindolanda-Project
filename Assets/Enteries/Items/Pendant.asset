@@ -12,9 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b07cc188e8cd7640905621179275f59, type: 3}
   m_Name: Pendant
   m_EditorClassIdentifier: 
-  id: 0
+  id: 18
   locked: 1
-  name: 
+  name: Roman Jewlry
   description: 
-  expandedDescription: 
-  funFacts: 
+  expandedDescription: 'Roman jewellery was made from coloure gemstones, glass and
+    metals to make ornate and beautifuly unique pieces.  Jewellery was used as a
+    social statement, a way o ftelling people which class you came from- the more
+    expensive and extravagant the better! Women typically collected and wore more
+    than men as they would have pierced ears, would wear bracelets, necklaces and
+    rings.
+
+    Men would wear less jewellery than women, they would wear rings and
+    were sometimes found to wear pendants.
+
+    Children would also wear little trinkets
+    and amulets which would be worn by the child to make sure that they were kept
+    safe from illness and misfortune.'
+  funFacts: '1) Womens jewellery was very important to them as this was the only
+    wealth that they were allowed to keep separate from their husbands!
+
+    2) Both
+    men and women wore Fibula which were beautifully ornate brooches!'
+  thumb: {fileID: 21300000, guid: df7b31956d1af944e9839c48a4cd1c7c, type: 3}
+  image: {fileID: 21300000, guid: df7b31956d1af944e9839c48a4cd1c7c, type: 3}

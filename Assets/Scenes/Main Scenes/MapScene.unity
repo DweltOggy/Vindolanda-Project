@@ -23830,6 +23830,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5260444947062489664, guid: e3e35159cc19fb74ca79a76f8976e5ac, type: 3}
+      propertyPath: money
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5260444947062489664, guid: e3e35159cc19fb74ca79a76f8976e5ac, type: 3}
       propertyPath: notifier
       value: 
       objectReference: {fileID: 796584392}

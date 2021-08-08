@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b07cc188e8cd7640905621179275f59, type: 3}
   m_Name: Comb
   m_EditorClassIdentifier: 
-  id: 0
+  id: 21
   locked: 1
-  name: 
+  name: Roman Comb
   description: 
   expandedDescription: 
   funFacts: 
+  thumb: {fileID: 21300000, guid: 136a69ed1400eec49930b74b54126f62, type: 3}
+  image: {fileID: 21300000, guid: 136a69ed1400eec49930b74b54126f62, type: 3}

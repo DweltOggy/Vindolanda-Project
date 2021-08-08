@@ -35,7 +35,7 @@ public class Quest4 : Objective
 
     public override void complete()
     {
-        Player.Instance.money += reward;
+        Player.Instance.addMoney(reward);
         if (!Player.Instance.gameObject.GetComponent<Quest5>())
         {
             Player.Instance.gameObject.AddComponent<Quest5>();

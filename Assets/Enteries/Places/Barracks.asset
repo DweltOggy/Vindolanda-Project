@@ -14,13 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 2
   locked: 1
-  name: Barracks
+  name: Roman Barracks
   description: The place where the soldiers come to sleep and live.
-  expandedDescription: The roman empire provided livng quarters for its soldiers!
-  funFacts: 'Fun Facts:
+  expandedDescription: 'Barracks were also known as Strigae. In the North of England,
+    barracks would be made from wood or stone as it could get quite cold. The ones
+    located in Vindolanda were built around 105 AD.
 
-    - Fact 1
+    The Barracks is where the
+    soldiers would live, sleep and work. the Barracks would often have a fireplace
+    to keep the soldiers warm, although the barracks may be quite crowded as there
+    would be several bunk beds for the soldiers to sleep. The Barracks would also
+    be the place that soldiers would leave their personal armour such as their shields,
+    armour and swords!'
+  funFacts: '1) In Vindolanas barracks they found the remains of a young child aged
+    between 8 and 10. They were thought to have died 1,800 years ago!
 
-    - Fact 2
-
-    - Fact 3'
+    2) The
+    Centurian or Commander would get to stay in a tent/barrack that was double the
+    size of anyone elses quarters!'
+  thumb: {fileID: 21300000, guid: 637900a0360d3d045b2688186e329613, type: 3}
+  image: {fileID: 21300000, guid: 637900a0360d3d045b2688186e329613, type: 3}
