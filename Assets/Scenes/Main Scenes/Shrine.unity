@@ -2919,13 +2919,21 @@ PrefabInstance:
       value: Livia Pola
       objectReference: {fileID: 0}
     - target: {fileID: 7046778948776811965, guid: 10abbad8727d97743844dc5004b806bd, type: 3}
+      propertyPath: dialogue.sentances.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7046778948776811965, guid: 10abbad8727d97743844dc5004b806bd, type: 3}
+      propertyPath: altDialogue.sentances.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7046778948776811965, guid: 10abbad8727d97743844dc5004b806bd, type: 3}
       propertyPath: dialogue.sentances.Array.data[0]
       value: Hi lepidna. Its a beatiful day!
       objectReference: {fileID: 0}
     - target: {fileID: 7046778948776811965, guid: 10abbad8727d97743844dc5004b806bd, type: 3}
       propertyPath: dialogue.sentances.Array.data[1]
-      value: Could you help me? I have a few items to deliver. I'll reward you for
-        your help.
+      value: Here is the first. It's a pendant could you deliver it to the man in
+        the Tavern. Godess bless you!
       objectReference: {fileID: 0}
     - target: {fileID: 7046778948776811965, guid: 10abbad8727d97743844dc5004b806bd, type: 3}
       propertyPath: dialogue.sentances.Array.data[2]

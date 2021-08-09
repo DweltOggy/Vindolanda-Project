@@ -9,6 +9,9 @@ public class QuestDialogues : MonoBehaviour
     public itemObject artifact;
     //shrine quests
     [Header("Shrine Quests")]
+    public Dialogue quest1Dialogue1;
+    public Dialogue quest1Dialogue2;
+
     public Dialogue tavernDialogue1;
     public Dialogue tavernDialogue2;
 
@@ -23,6 +26,9 @@ public class QuestDialogues : MonoBehaviour
 
     //Barracks quest
     [Header("Barracks Quests")]
+    public Dialogue BarracksDialogue1;
+    public Dialogue BarracksDialogue2;
+
     public Dialogue BarracksDialogue3;
     public Dialogue BarracksDialogue4;
 
@@ -31,6 +37,9 @@ public class QuestDialogues : MonoBehaviour
 
     //Tavern Quests
     [Header("Tavern Quests")]
+    public Dialogue TavernQuestStart;
+    public Dialogue TavernQuestALT;
+
     public Dialogue TavernQuest1;
     public Dialogue TavernQuest2;
 

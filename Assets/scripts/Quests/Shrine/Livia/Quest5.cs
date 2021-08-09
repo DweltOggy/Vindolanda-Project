@@ -8,7 +8,7 @@ public class Quest5 : Objective
 {
 
     public string info = "Return to Livia Pola in the Temple";
-    public int reward = 15;
+    public int reward = 40;
 
     public Dialogue Dialogue1;
     public Dialogue Dialogue2;

@@ -65,9 +65,8 @@ public class ShopButtons : MonoBehaviour
         {
             Player.Instance.addItem(info.item);
             knowledge.Encyclopedia.Instance.unlockEntry(info.item.databaseEntry);
-            //FindObjectOfType<EcycloUIManager>().updateUI();
             Player.Instance.subMoney(info.item.value);
-            Destroy(button.gameObject);//.SetActive(false);
+            Destroy(button.gameObject);
         }
     }
 

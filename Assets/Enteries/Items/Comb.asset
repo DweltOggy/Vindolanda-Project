@@ -15,8 +15,16 @@ MonoBehaviour:
   id: 21
   locked: 1
   name: Roman Comb
-  description: 
-  expandedDescription: 
-  funFacts: 
+  description: LEarn more about this esssetial tool!
+  expandedDescription: Hygiene was very important to Romans, they would often use
+    combs to not only detangle their hai rbut comb for nits and parasites as this
+    was common in Ancient Rome. These combs would be made from wood and bone, they
+    would be expertly crafted and then traded at market and bought in order to keep
+    hair clean and to help style. Some combs sported individual designs which would
+    have cost a lof of money and be used by the upper classes. Many combs were found
+    at Vindolanda and can be seen in the museum, make sure to check them out.
+  funFacts: 1) Management of lice and parasites would have been very important in
+    soldiers as they were living in close quarters in their barracks, this needed
+    to be kept on top of!
   thumb: {fileID: 21300000, guid: 136a69ed1400eec49930b74b54126f62, type: 3}
   image: {fileID: 21300000, guid: 136a69ed1400eec49930b74b54126f62, type: 3}

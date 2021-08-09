@@ -14,9 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 26
   locked: 1
-  name: 
-  description: 
-  expandedDescription: 
-  funFacts: 
+  name: Slavery
+  description: Slavery was an unfortunate aspect of Roman society.
+  expandedDescription: 'Slaves were the third social class in Roman society, they
+    played a massively important role. They provided manual labour and domestic labour.
+    There were some slaves that were highl specialised and would therefore be used
+    in highly skilled jobs such as craftmanship. Citizens who worked as accountants
+    and physicians were usually slaves.
+
+    Slaves were considered property by
+    Roman law and they had noo rights or legal protection. Over the years slaves
+    got more and more legal protection and would eventually be able to formally complain
+    against the treatment they received by their masters.'
+  funFacts: 1) Slaves would be forced to sleep on the floor, in heaps of straw and
+    hay!
   thumb: {fileID: 21300000, guid: b74fd6f80ec61d5489084c2b0f83c18b, type: 3}
   image: {fileID: 21300000, guid: b74fd6f80ec61d5489084c2b0f83c18b, type: 3}

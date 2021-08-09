@@ -22,7 +22,7 @@ public class EcycloUIManager : MonoBehaviour
 
     [SerializeField] Button closeUIButton;
 
-   
+    
 
     public List<GameObject> uiElemants;
 

@@ -46,6 +46,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pendant: {fileID: 11400000, guid: 74717308e047f0848a70d0f4ef9e0e42, type: 2}
   artifact: {fileID: 11400000, guid: 58f4c3e30718aec40903a0a6dc3a8110, type: 2}
+  quest1Dialogue1:
+    name: Livia Pola
+    sentances:
+    - Hi lepidna. Its a beatiful day!
+    - Could you help me? I have a few items to deliver. I'll reward you for your
+      help.
+    - Here is the first. It's a pendant could you deliver it to the man in the Tavern.
+      Godess bless you!
+  quest1Dialogue2:
+    name: Livia Pola
+    sentances:
+    - Have you delivered it to him in the tavern yet?
   tavernDialogue1:
     name: Tavern Patron
     sentances:
@@ -80,6 +92,23 @@ MonoBehaviour:
   quest5Dialogue2:
     name: Blessings of the gods!
     sentances: []
+  BarracksDialogue1:
+    name: Gaius Marinus
+    sentances:
+    - '*sigh* I''m so tired... oh hi lupidna! We''ve been on maneuvers all day and
+      I am exhusted!'
+    - Sorry to bother but I missed placed my helmet could you find it for me? I'm
+      sure I left it somewhere in town.
+    - I'd look myself but I've got to clean my armour...
+  BarracksDialogue2:
+    name: Gaius Marinus
+    sentances:
+    - "Have you found it yet? The helmet ou ther isn't mine by the way.   Thats Padre's.
+      \n"
+    - 'Should I take it? No that would get Padre into touble... Lupidna you''ve got
+      to help me!!
+
+'
   BarracksDialogue3:
     name: Gaius Marinus
     sentances:
@@ -101,6 +130,19 @@ MonoBehaviour:
     name: Gaius Marinus
     sentances:
     - Thank you Livia! You helped so much!
+  TavernQuestStart:
+    name: Tertius Cordus
+    sentances:
+    - Hey lupidna... Want something to drink or Eat? No? Ok hey listen...
+    - I misplaced my keys somewhere in town. Could you help me find them? I can't
+      leave here
+    - Can't have left the at the market so it must be the bath house or the temple.
+      Thanks you're a good friend.
+  TavernQuestALT:
+    name: Tertius Cordus
+    sentances:
+    - Can't have left the at the market so it must be the bath house or the temple.
+      Thanks you're a good friend.
   TavernQuest1:
     name: Scribe
     sentances:
@@ -119,11 +161,19 @@ MonoBehaviour:
     sentances:
     - Thank you!
   BathQuest1:
-    name: 
-    sentances: []
+    name: Manius Rex
+    sentances:
+    - Hi Sulpicia. Got my hands full today the other bath room is full and theres
+      plenty of customers here too!
+    - Sorry to ask but could you run an erand for me as I'm so busy? I need meat
+      from the market to feed the customers!
+    - Here's some money for the meat. I'll pay you for your time when you get back!
   BathQuest2:
-    name: 
-    sentances: []
+    name: Manius Rex
+    sentances:
+    - I syuppose you could just keep the money and not buy the meat but I trust you...
+    - He gives youa shifty look
+    - ' Also I''ll give you even more as a reward when you return!'
   BathQuest3:
     name: Manius Rex
     sentances:

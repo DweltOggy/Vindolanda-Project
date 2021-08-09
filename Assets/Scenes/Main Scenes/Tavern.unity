@@ -14812,8 +14812,16 @@ PrefabInstance:
       value: Tertius Cordus
       objectReference: {fileID: 0}
     - target: {fileID: 7046778948776811965, guid: 10abbad8727d97743844dc5004b806bd, type: 3}
+      propertyPath: dialogue.sentances.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7046778948776811965, guid: 10abbad8727d97743844dc5004b806bd, type: 3}
+      propertyPath: altDialogue.sentances.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7046778948776811965, guid: 10abbad8727d97743844dc5004b806bd, type: 3}
       propertyPath: dialogue.sentances.Array.data[0]
-      value: Hey lupidna... Want something to drink or Eat? No? Ok hey listen...
+      value: 'Hey lupidna... Want something to drink or Eat? No? '
       objectReference: {fileID: 0}
     - target: {fileID: 7046778948776811965, guid: 10abbad8727d97743844dc5004b806bd, type: 3}
       propertyPath: dialogue.sentances.Array.data[1]

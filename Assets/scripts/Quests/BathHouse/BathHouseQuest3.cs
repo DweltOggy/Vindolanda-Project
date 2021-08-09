@@ -17,6 +17,8 @@ public class BathHouseQuest3 : Objective
         Dialogue1 = dialogueStore.BathQuest3;
         Dialogue2 = dialogueStore.BathQuest4;
 
+        setDialogue();
+
     }
     public override bool Achieved()
     {
@@ -46,7 +48,7 @@ public class BathHouseQuest3 : Objective
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    public void setDialogue()
     {
         NPC recpiant;
         GameObject NPC = GameObject.FindGameObjectWithTag("BathQuest");
@@ -57,5 +59,11 @@ public class BathHouseQuest3 : Objective
             recpiant.setDialogue(Dialogue1);
             recpiant.setAltDialogue(Dialogue2);
         }
+    }
+
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        setDialogue();
     }
 }

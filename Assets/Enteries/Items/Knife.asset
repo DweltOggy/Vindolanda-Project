@@ -14,9 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 16
   locked: 1
-  name: Roman Utensils
-  description: 
-  expandedDescription: 
+  name: Roman Eating Knife
+  description: Romans didn't have forks like us!
+  expandedDescription: 'Romans did not use any form of fork when they were eating
+    their food but instead would use spoons and knives, they would even use their
+    hands and fingers to eat their meals. Eating with your hands would be more popular
+    as utensils were quite expensive and were used by the upper class in society.
+    Due to not having many utensils the food would be cut into small bite sized pieces
+    that they could eat easilty- these were called finger foods.
+
+    Plates and
+    dishes that were made out of wood and pottery were used by the lower classes
+    whilst metal, tin, bronze and pewter plates and utensils were used by the upper
+    classes.'
   funFacts: 
   thumb: {fileID: 21300000, guid: 3ce7db263c7a8f2479993dedb082793c, type: 3}
   image: {fileID: 21300000, guid: 3ce7db263c7a8f2479993dedb082793c, type: 3}

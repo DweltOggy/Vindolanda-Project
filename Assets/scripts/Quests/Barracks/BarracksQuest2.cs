@@ -11,7 +11,15 @@ public class BarracksQuest2 : Objective
 
     public override bool Achieved()
     {
-        return Player.Instance.playerInventory.checkInventory("Quest_Helmet");
+        bool done = false;
+        
+        if(FindObjectOfType<DialogueManger>().currentNPC != "Gaius Marinus" 
+            && Player.Instance.playerInventory.checkInventory("Quest_Helmet"))
+        {
+            done = true;
+        }
+
+        return done;
     }
     public override string message()
     {

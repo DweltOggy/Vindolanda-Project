@@ -14,10 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 24
   locked: 1
-  name: Roman Soldiers
-  description: The roman Army was made up of many different types of soldier. This
-    entery goes into a bit more detail on the soldiers presnt at vindolnda.
-  expandedDescription: 
-  funFacts: 
+  name: Roman Legionnaires
+  description: The roman Army was made up of many different types of soldier. The
+    legionnaire was the most Famous!
+  expandedDescription: The Roman Legionary was aspecial soldier in the Roman Army
+    that were used to conquer and defend territories in ancient Rome. They were classed
+    as the best fighters and would fight alongside auxiliary and cavalry soldiers.
+    They would typically be Roman citizens under the age of 45, they wouold enlist
+    for 25 years of service. Although there were know Legionnaires at Vindolanda,
+    there are many examples of the life and weapons they would use at the museum.
+  funFacts: '1) A Roman Legionary would often have to march 20 miles a day!
+
+    2)
+    At its largest the Roman Army was made up of 30 legions and 150,000 soldiers!'
   thumb: {fileID: 21300000, guid: c50a704fe233eeb4383baaf3a8867069, type: 3}
   image: {fileID: 21300000, guid: c50a704fe233eeb4383baaf3a8867069, type: 3}

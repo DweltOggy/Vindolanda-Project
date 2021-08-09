@@ -10,7 +10,15 @@ public class BarracksQuest4 : Objective
 
     public override bool Achieved()
     {
-        return Player.Instance.playerInventory.checkInventory("Quest_Bow");
+        bool done = false;
+
+        if (FindObjectOfType<DialogueManger>().currentNPC != "Gaius Marinus"
+            && Player.Instance.playerInventory.checkInventory("Quest_Bow"))
+        {
+            done = true;
+        }
+
+        return done;
     }
     public override string message()
     {

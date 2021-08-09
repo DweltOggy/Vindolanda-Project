@@ -18185,13 +18185,20 @@ PrefabInstance:
       value: Manius Rex
       objectReference: {fileID: 0}
     - target: {fileID: 7046778948776811965, guid: 10abbad8727d97743844dc5004b806bd, type: 3}
+      propertyPath: altDialogue.name
+      value: Manius Rex
+      objectReference: {fileID: 0}
+    - target: {fileID: 7046778948776811965, guid: 10abbad8727d97743844dc5004b806bd, type: 3}
+      propertyPath: dialogue.sentances.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7046778948776811965, guid: 10abbad8727d97743844dc5004b806bd, type: 3}
       propertyPath: altDialogue.sentances.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7046778948776811965, guid: 10abbad8727d97743844dc5004b806bd, type: 3}
       propertyPath: dialogue.sentances.Array.data[0]
-      value: Hi Lupidna. Got my hands full today the other bath room is full and
-        theres plenty of customers here too!
+      value: Hi Sulpicia . Have fun at the party!
       objectReference: {fileID: 0}
     - target: {fileID: 7046778948776811965, guid: 10abbad8727d97743844dc5004b806bd, type: 3}
       propertyPath: dialogue.sentances.Array.data[1]
@@ -18205,8 +18212,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7046778948776811965, guid: 10abbad8727d97743844dc5004b806bd, type: 3}
       propertyPath: altDialogue.sentances.Array.data[0]
-      value: I syuppose you could just keep the money and not buy the meat but I
-        trust you....
+      value: there are so many customers today...
       objectReference: {fileID: 0}
     - target: {fileID: 7046778948776811965, guid: 10abbad8727d97743844dc5004b806bd, type: 3}
       propertyPath: altDialogue.sentances.Array.data[1]

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 14
   locked: 1
-  name: Hunting
-  description: 
+  name: Roman Archers
+  description: Learn more about roman Archers!
   expandedDescription: Sagittarii is the latin word for archers and was used by the
     Romans. Sagittariorum was used when talking about infantry or cavalry that used
     a special archers. Romans used composite bow, although they started their training

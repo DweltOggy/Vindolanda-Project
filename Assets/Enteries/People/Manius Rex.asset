@@ -15,8 +15,16 @@ MonoBehaviour:
   id: 25
   locked: 1
   name: 
-  description: 
-  expandedDescription: 
-  funFacts: 
+  description: The Romans lived in a very strict society! Learn az little more!
+  expandedDescription: Roman citizens were divided into two classes- the Plebeians
+    who made up most of the citizens in Roman society, these people were mainyly
+    soldiers, craftsmen and farmers. There was no way that a Plebian could become
+    a Patrician, you had to be born into the that class. The Patricians who were
+    the ruling class. There were certain families that would be considered to be
+    in this upper class, these would make up a small part of the populations but
+    they held most of the power in society.
+  funFacts: 1) There was a revolt in 494 BC, as the Plebians fought back against
+    the ruling class. Over the course of 200 years the Plebians gained more and more
+    rights!
   thumb: {fileID: 21300000, guid: 1e51d3a0fd7db064cb8b1e1d68c84e73, type: 3}
   image: {fileID: 21300000, guid: 1e51d3a0fd7db064cb8b1e1d68c84e73, type: 3}

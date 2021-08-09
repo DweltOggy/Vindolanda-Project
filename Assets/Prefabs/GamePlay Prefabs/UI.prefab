@@ -525,11 +525,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Welocome to the Vindolanda game!\n\n In the game you Play as         
-    and must buy the perfect gift for your friend from the market in town. Explore
-    the town and fort, talk to characters, Finish your To Do list, compete the trivia
-    challenge in the tavern and fill your journal by picking up Items and exploring.\n\nEarn
-    enough money to buy the perfect gift!"
+  m_Text: "Welocome to the Vindolanda game!\n\n In the game you Play as Sulpicia
+    Lepidina\r and must buy the perfect gift for your friend from the market in town.
+    Explore the town and fort, talk to characters, Finish your To Do list, compete
+    the trivia challenge in the tavern and fill your journal by picking up Items
+    and exploring.\n\nEarn enough money to buy the perfect gift!"
 --- !u!1 &4226052011978725259
 GameObject:
   m_ObjectHideFlags: 0
@@ -2164,7 +2164,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.020000001, y: 0.6926919}
   m_AnchorMax: {x: 0.22200002, y: 0.75000006}
-  m_AnchoredPosition: {x: 83.73047, y: 65.956635}
+  m_AnchoredPosition: {x: 260, y: 172}
   m_SizeDelta: {x: 124.10156, y: 31.389122}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4226052012517442524
@@ -3721,8 +3721,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 727, y: -153}
-  m_SizeDelta: {x: 410.3881, y: 585.6489}
+  m_AnchoredPosition: {x: 731.83374, y: -205.3656}
+  m_SizeDelta: {x: 401.8892, y: 506.6064}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4226052012969881506
 CanvasRenderer:
@@ -5374,7 +5374,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: You did it you bought the comb! You can choose to start over from the main
+    menu or try and fill out your journal!
 --- !u!1 &4226052013475593984
 GameObject:
   m_ObjectHideFlags: 0

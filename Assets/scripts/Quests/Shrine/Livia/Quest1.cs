@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using objectives;
+using UnityEngine.SceneManagement;
 
 public class Quest1  : Objective
 {
@@ -9,6 +10,19 @@ public class Quest1  : Objective
     public string info = "Talk to Livia Pola in the Temple";
     public int reward = 2;
     public itemObject delivery;
+
+
+    public Dialogue Dialogue1;
+    public Dialogue Dialogue2;
+    private void Start()
+    {
+        QuestDialogues dialogueStore = FindObjectOfType<QuestDialogues>();
+
+        Dialogue1 = dialogueStore.quest1Dialogue1;
+        Dialogue2 = dialogueStore.quest1Dialogue2;
+
+        setDialogue();
+    }
 
     public void Awake()
     {
@@ -35,9 +49,7 @@ public class Quest1  : Objective
     {
         Player.Instance.addItem(delivery);
         knowledge.Encyclopedia.Instance.unlockEntry(23);
-        //FindObjectOfType<EcycloUIManager>().updateUI();
         knowledge.Encyclopedia.Instance.unlockEntry(delivery.databaseEntry);
-        //FindObjectOfType<EcycloUIManager>().updateUI();
 
         Player.Instance.addMoney(reward);
         if (!Player.Instance.gameObject.GetComponent<Quest2>())
@@ -45,4 +57,33 @@ public class Quest1  : Objective
             Player.Instance.gameObject.AddComponent<Quest2>();
         }
     }
+
+    public void setDialogue()
+    {
+        NPC recpiant;
+        GameObject NPC = GameObject.FindGameObjectWithTag("ShrineQuest");
+        if (NPC != null)
+        {
+            recpiant = NPC.GetComponent<NPC>();
+
+            recpiant.setDialogue(Dialogue1);
+            recpiant.setAltDialogue(Dialogue2);
+        }
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        setDialogue();
+    }
+
 }

@@ -18,6 +18,8 @@ public class BarracksQuest3 : Objective
         Dialogue1 = dialogueStore.BarracksDialogue3;
         Dialogue2 = dialogueStore.BarracksDialogue4;
 
+        setDialogue();
+
     }
     public override bool Achieved()
     {
@@ -51,7 +53,7 @@ public class BarracksQuest3 : Objective
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    public void setDialogue()
     {
         NPC recpiant;
         GameObject NPC = GameObject.FindGameObjectWithTag("BarracksQuest");
@@ -62,5 +64,10 @@ public class BarracksQuest3 : Objective
             recpiant.setDialogue(Dialogue1);
             recpiant.setAltDialogue(Dialogue2);
         }
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        setDialogue();
     }
 }

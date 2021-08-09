@@ -33,16 +33,6 @@ namespace objectives
             DontDestroyOnLoad(this.gameObject);
         }
 
-        //void OnGUI()
-        //{
-        //    foreach(var objective in objectives)
-        //    {
-        //        string message = objective.message();
-        //        if(!value.text.Contains(message))
-        //            value.text +="- " + message + "\n \n";
-        //    }
-        //    percentage.text = "Journal (J) \n" + Encyclopedia.Instance.percentageComplete() + "%";
-        //}
 
         public void removeString(string A)
         {

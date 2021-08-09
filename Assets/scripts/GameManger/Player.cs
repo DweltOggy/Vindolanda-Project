@@ -17,6 +17,17 @@ public class Player : MonoBehaviour
     private void Start()
     {
         startMoney = money;
+        addStartQuests();
+    }
+
+    void addStartQuests()
+    {     
+        gameObject.AddComponent<FillJournalQuest>();
+        gameObject.AddComponent<MainQuest>();
+        gameObject.AddComponent<Quest1>();
+        gameObject.AddComponent<BarracksQuest1>();
+        gameObject.AddComponent<BathHouseQuest1>();
+        gameObject.AddComponent<TavernQuest1>();
     }
 
     void Awake()
@@ -82,14 +93,7 @@ public class Player : MonoBehaviour
             }
         }
         money = startMoney;
-
-        gameObject.AddComponent<FillJournalQuest>();
-        gameObject.AddComponent<MainQuest>();
-        gameObject.AddComponent<Quest1>();
-        gameObject.AddComponent<BarracksQuest1>();
-        gameObject.AddComponent<BathHouseQuest1>();
-        gameObject.AddComponent<TavernQuest1>();
-
+        addStartQuests();
         GameController.Instance.refresh();
     }
 

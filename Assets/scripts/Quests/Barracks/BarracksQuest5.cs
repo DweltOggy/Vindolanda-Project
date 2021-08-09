@@ -8,7 +8,7 @@ public class BarracksQuest5 : Objective
 {
 
     public string info = "Return Gaius' Bow";
-    public int reward = 15;
+    public int reward = 40;
 
     public Dialogue Dialogue1;
     public Dialogue Dialogue2;
@@ -18,7 +18,7 @@ public class BarracksQuest5 : Objective
 
         Dialogue1 = dialogueStore.BarracksDialogue5;
         Dialogue2 = dialogueStore.BarracksDialogue6;
-
+        setDialogue();
     }
 
     public override bool Achieved()
@@ -49,7 +49,7 @@ public class BarracksQuest5 : Objective
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    public void setDialogue()
     {
         NPC recpiant;
         GameObject NPC = GameObject.FindGameObjectWithTag("BarracksQuest");
@@ -60,5 +60,10 @@ public class BarracksQuest5 : Objective
             recpiant.setDialogue(Dialogue1);
             recpiant.setAltDialogue(Dialogue2);
         }
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        setDialogue();
     }
 }

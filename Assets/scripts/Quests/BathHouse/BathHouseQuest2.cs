@@ -9,7 +9,15 @@ public class BathHouseQuest2 : Objective
 
     public override bool Achieved()
     {
-        return Player.Instance.playerInventory.checkInventory("SHOP_MEAT");
+        bool done = false;
+
+        if (FindObjectOfType<DialogueManger>().currentNPC != "Manius Rex"
+            && Player.Instance.playerInventory.checkInventory("SHOP_MEAT"))
+        {
+            done = true;
+        }
+
+        return done;
     }
     public override string message()
     {

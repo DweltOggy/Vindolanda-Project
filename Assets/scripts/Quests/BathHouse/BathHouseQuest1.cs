@@ -1,15 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BathHouseQuest1 : Objective
 {
     public string info = "Talk to Manius Rex in the Bath House";
-    public int reward = 2;
+    public int reward = 15;
 
-    public void Awake()
+    public Dialogue Dialogue1;
+    public Dialogue Dialogue2;
+
+    private void Start()
     {
-        DontDestroyOnLoad(this);
+        QuestDialogues dialogueStore = FindObjectOfType<QuestDialogues>();
+
+        Dialogue1 = dialogueStore.BathQuest1;
+        Dialogue2 = dialogueStore.BathQuest2;
+
+        setDialogue();
     }
     public override bool Achieved()
     {
@@ -28,10 +37,38 @@ public class BathHouseQuest1 : Objective
     {
         Player.Instance.addMoney(reward);
         knowledge.Encyclopedia.Instance.unlockEntry(25);
-        //FindObjectOfType<EcycloUIManager>().updateUI();
         if (!Player.Instance.gameObject.GetComponent<BathHouseQuest2>())
         {
             Player.Instance.gameObject.AddComponent<BathHouseQuest2>();
         }
     }
+
+    public void setDialogue()
+    {
+        NPC recpiant;
+        GameObject NPC = GameObject.FindGameObjectWithTag("BathQuest");
+        if (NPC != null)
+        {
+            recpiant = NPC.GetComponent<NPC>();
+
+            recpiant.setDialogue(Dialogue1);
+            recpiant.setAltDialogue(Dialogue2);
+        }
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        setDialogue();
+    }
+
 }

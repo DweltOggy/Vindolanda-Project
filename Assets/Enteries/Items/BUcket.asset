@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 12
   locked: 1
-  name: 
-  description: 
+  name: Buckets
+  description: Even roman buckets can be intersting!
   expandedDescription: Buckets were a surprisingly vital part of Roman life. they
     were used to carry water fro drinking but also in the events of a fire the Vigiles
     (firefighters) woulod use them when attending a fire. They were also important

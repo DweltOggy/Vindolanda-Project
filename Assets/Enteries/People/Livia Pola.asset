@@ -14,9 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 23
   locked: 1
-  name: 
-  description: 
-  expandedDescription: 
-  funFacts: 
+  name: Vestel Virgin
+  description: Livia isn't one of this exclusive club howeer learn more about this
+    intersting aspect of roman religion!
+  expandedDescription: Vestal Virgins were priestesses of Vesta (the Goddess of the
+    hearth). They all took a 30 year vow of chastity and were allowed to not marry
+    and have children even though it was expected of them in Roman society. The priestesses
+    usually knew they wanted to be Vestal Virgins at age 6-10 years old. During their
+    thirty years they would spend 10 years as students, 10 years as servants and
+    10 years as teachers. After the 30 years they were then replaced.
+  funFacts: 1) There were only ever seven Vestal Virgins!
   thumb: {fileID: 21300000, guid: 251cfcf41f67e2e42bf57494bd667a6c, type: 3}
   image: {fileID: 21300000, guid: 251cfcf41f67e2e42bf57494bd667a6c, type: 3}

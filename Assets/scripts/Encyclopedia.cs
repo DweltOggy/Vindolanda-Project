@@ -51,7 +51,6 @@ namespace knowledge
             {
                 entry.lockEntry();
             }
-            //Destroy(gameObject);
         }
 
         IEnumerator showNotifier(float delay)

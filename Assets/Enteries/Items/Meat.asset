@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 17
   locked: 1
   name: Roman Diet
-  description: 
+  description: The Romans atte very differently thann we do! Find out more!
   expandedDescription: 'The roman diet was generally quite healthy, they primarily
     ate cereals and legumes. The sides would include vegetables, cheese, meat and
     fish. The sauces could me made from fermented fish, herbs, spices, honey and
@@ -29,6 +29,6 @@ MonoBehaviour:
     They would also be supplied with rations of bread, vegetables and meats!
 
     2)
-    A Gladiators diet was much more grim, theyw ould eat wheat, barley and beans!'
+    A Gladiators diet was much more grim, they would eat wheat, barley and beans!'
   thumb: {fileID: 21300000, guid: 8c63dea57acaa46439254442a90e33c4, type: 3}
   image: {fileID: 21300000, guid: 8c63dea57acaa46439254442a90e33c4, type: 3}

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class TavernQuest3 : Objective
 {
     public string info = "Return Tertius Cordus' key";
-    public int reward = 40;
+    public int reward = 60;
 
     public Dialogue Dialogue1;
     public Dialogue Dialogue2;

@@ -15,8 +15,15 @@ MonoBehaviour:
   id: 22
   locked: 1
   name: 
-  description: 
-  expandedDescription: 
-  funFacts: 
+  description: The Soldiers here at vindolanda are Auxilaries! Learn more!
+  expandedDescription: Auxilia were introduced as non-citizen soldiers that were
+    attached to the citizen legions by Augustis in 30BC. They provided almost all
+    of the Roman cavalry and they were all volunteers. They would often volunteer
+    to join the Roman army in order to escape poverty.
+  funFacts: '1) They had salaries that were twenty percent lower than legionnaires!
+
+    2)
+    After they served for 25 years, then they were classes as Roman citizens, along
+    with their children!'
   thumb: {fileID: 21300000, guid: deead889bb97f0e4f9e421eb1a4f3ea4, type: 3}
   image: {fileID: 21300000, guid: deead889bb97f0e4f9e421eb1a4f3ea4, type: 3}
