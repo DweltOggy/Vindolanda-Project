@@ -14,7 +14,6 @@ public class EntryTrigger : MonoBehaviour
         if(Encyclopedia.Instance)
         {
             Encyclopedia.Instance.unlockEntry(id);
-            //FindObjectOfType<EcycloUIManager>().updateUI();
         }
 
         if(audio != "" && SoundManager.Instance)

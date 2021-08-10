@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1024 height=576></canvas>
+      <canvas id="unity-canvas" width=1152 height=648></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -29,9 +29,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/WebGlBuild.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WebGlBuild.data.gz",
-        frameworkUrl: buildUrl + "/WebGlBuild.framework.js.gz",
-        codeUrl: buildUrl + "/WebGlBuild.wasm.gz",
+        dataUrl: buildUrl + "/WebGlBuild.data",
+        frameworkUrl: buildUrl + "/WebGlBuild.framework.js",
+        codeUrl: buildUrl + "/WebGlBuild.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Vindolanda Game",
@@ -62,8 +62,8 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "1024px";
-        canvas.style.height = "576px";
+        canvas.style.width = "1152px";
+        canvas.style.height = "648px";
       }
       loadingBar.style.display = "block";
 

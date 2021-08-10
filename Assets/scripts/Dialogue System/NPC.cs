@@ -32,7 +32,7 @@ public class NPC : MonoBehaviour
     }
     public void triggerDialogue()
     {
-        FindObjectOfType<DialogueManger>().StartDialogue(dialogue);
+        DialogueManger.Instance.StartDialogue(dialogue);
 
         if(altDialogue.sentances.Length > 0)
         {

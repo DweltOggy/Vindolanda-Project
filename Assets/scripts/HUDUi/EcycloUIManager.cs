@@ -7,27 +7,19 @@ using UnityEngine.UI;
 
 public class EcycloUIManager : MonoBehaviour
 {
-
     [SerializeField] GameObject MainCanvas;
     [SerializeField] GameObject Parent;
-
     [SerializeField] GameObject EntryLayout;
-
     [SerializeField] GameObject ExpandLayout;
-
     [SerializeField] Text titleUIText;
     [SerializeField] Text descriptionUIText;
     [SerializeField] Text factsUIText;
     [SerializeField] Image expandImage;
-
     [SerializeField] Button closeUIButton;
 
-    
-
     public List<GameObject> uiElemants;
-
     bool active = false;
-    // Start is called before the first frame update
+
     void Start()
     {
         closeUIButton.onClick.RemoveAllListeners();
@@ -53,7 +45,6 @@ public class EcycloUIManager : MonoBehaviour
         updateUI();
     }
 
-    // Update is called once per frame
     void Update()
     {
 
@@ -98,11 +89,24 @@ public class EcycloUIManager : MonoBehaviour
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
+
+
+        if (FindObjectOfType<MouseLook>())
+        {
+            FindObjectOfType<MouseLook>().MouseEnabled = false;
+            FindObjectOfType<PlayerMovement>().MovementEnabled = false;
+        }
+
         MainCanvas.SetActive(true);
     }
 
     public void Hide()
     {
+        if (FindObjectOfType<MouseLook>())
+        {
+            FindObjectOfType<MouseLook>().MouseEnabled = true;
+            FindObjectOfType<PlayerMovement>().MovementEnabled = true;
+        }
         ExpandLayout.SetActive(false);
         MainCanvas.SetActive(false);
     }

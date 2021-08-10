@@ -8,7 +8,7 @@ public class BarracksQuest5 : Objective
 {
 
     public string info = "Return Gaius' Bow";
-    public int reward = 40;
+    public int reward = 70;
 
     public Dialogue Dialogue1;
     public Dialogue Dialogue2;

@@ -5,19 +5,30 @@ using UnityEngine.UI;
 
 public class DialogueManger : MonoBehaviour
 {
+    public static DialogueManger Instance;
+
     public Text nameText;
     public Text dialogueText;
-
     public Animator animator;
-
     private Queue<string> sentances;
-
     public string currentNPC = " ";
     public bool inDialogue = false;
-    // Start is called before the first frame update
+
     void Start()
     {
         sentances = new Queue<string>();
+    }
+
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else if (Instance != this)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     public void StartDialogue(Dialogue dialogue)

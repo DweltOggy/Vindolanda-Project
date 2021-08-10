@@ -49,7 +49,7 @@ MonoBehaviour:
   quest1Dialogue1:
     name: Livia Pola
     sentances:
-    - Hi lepidna. Its a beatiful day!
+    - Hi Sulpicia. Its a beatiful day!
     - Could you help me? I have a few items to deliver. I'll reward you for your
       help.
     - Here is the first. It's a pendant could you deliver it to the man in the Tavern.
@@ -79,7 +79,7 @@ MonoBehaviour:
   quest4Dialogue1:
     name: Bath House Patron
     sentances:
-    - Oh htank you it's too kind of you to bring i that to me! Tell Livia thank you!
+    - Oh Thank you it's too kind of you to bring i that to me! Tell Livia thank you!
   quest4Dialogue2:
     name: Bath Housee Patron
     sentances:
@@ -87,7 +87,7 @@ MonoBehaviour:
   quest5Dialogue1:
     name: Livia Pola
     sentances:
-    - Thank you Lepidna! You have the kindness of the gods. Here is your reward!
+    - Thank you Sulpicia! You have the kindness of the gods. Here is your reward!
       I hope you have a good time at the party!
   quest5Dialogue2:
     name: Blessings of the gods!
@@ -95,7 +95,7 @@ MonoBehaviour:
   BarracksDialogue1:
     name: Gaius Marinus
     sentances:
-    - '*sigh* I''m so tired... oh hi lupidna! We''ve been on maneuvers all day and
+    - '*sigh* I''m so tired... oh hi Sulpicia! We''ve been on maneuvers all day and
       I am exhusted!'
     - Sorry to bother but I missed placed my helmet could you find it for me? I'm
       sure I left it somewhere in town.
@@ -103,10 +103,7 @@ MonoBehaviour:
   BarracksDialogue2:
     name: Gaius Marinus
     sentances:
-    - "Have you found it yet? The helmet ou ther isn't mine by the way.   Thats Padre's.
-      \n"
-    - 'Should I take it? No that would get Padre into touble... Lupidna you''ve got
-      to help me!!
+    - 'Have you found it yet?
 
 '
   BarracksDialogue3:
@@ -123,8 +120,8 @@ MonoBehaviour:
   BarracksDialogue5:
     name: Gaius Marinus
     sentances:
-    - My Bow! Livia your're a life saver!
-    - Here take this it isn't m,uch but i hope it helps!
+    - My Bow! Sulpicia you're a life saver!
+    - Here take this it isn't much but i hope it helps!
     - Enjoy the party!
   BarracksDialogue6:
     name: Gaius Marinus
@@ -133,7 +130,7 @@ MonoBehaviour:
   TavernQuestStart:
     name: Tertius Cordus
     sentances:
-    - Hey lupidna... Want something to drink or Eat? No? Ok hey listen...
+    - Hey Sulpicia... Want something to drink or Eat? No? Ok hey listen...
     - I misplaced my keys somewhere in town. Could you help me find them? I can't
       leave here
     - Can't have left the at the market so it must be the bath house or the temple.

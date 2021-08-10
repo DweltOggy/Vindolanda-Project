@@ -10,7 +10,7 @@ namespace knowledge
     {
         public static Encyclopedia Instance;
 
-        [SerializeField] public List<entry> enteries;// = new List<entry>();
+        [SerializeField] public List<entry> enteries;
         public GameObject notifier;
 
         public void Start()

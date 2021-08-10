@@ -7,7 +7,7 @@ using UnityEngine;
 public class Inventory : ScriptableObject
 {
     public int money = 30;
-    public List<itemObject> items;// = new List<itemObject>();
+    public List<itemObject> items;
 
     public void addItem(itemObject newItem)
     { 

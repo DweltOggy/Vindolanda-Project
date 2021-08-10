@@ -53,7 +53,6 @@ public class HUDUI : MonoBehaviour
             animator.SetBool("isOpen", true);
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.Confined;
-            //InventoryCanvas.SetActive(true);
         }
            
     }
@@ -72,7 +71,6 @@ public class HUDUI : MonoBehaviour
             animator.SetBool("isOpen", false);
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
-            //InventoryCanvas.SetActive(false);
         }  
     }
 }

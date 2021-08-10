@@ -18,17 +18,6 @@ public class End : MonoBehaviour
         LevelLoader.Instance.loadLevel("StartScene");
     }
 
-
-    //private void Awake()
-    //{
-    //    SceneManager.sceneLoaded += LoadedScene;
-    //}
-
-    //private void OnDisable()
-    //{
-    //    SceneManager.sceneLoaded -= LoadedScene;
-    //}
-
     private void OnLevelWasLoaded(int level)
     {
         if(level == 0)
@@ -51,28 +40,4 @@ public class End : MonoBehaviour
             }
         }
     }
-
-    //private void LoadedScene(Scene scene, LoadSceneMode mode)
-    //{
-    //    if(scene.name == "StartScene")
-    //    {
-    //        Player.Instance.restart();
-    //        knowledge.Encyclopedia.Instance.restart();
-    //        objectives.GameController.Instance.restart();
-
-    //        ShopButtons test = GameObject.FindObjectOfType<ShopButtons>();
-    //        if (test)
-    //        {
-    //            test.populate();
-    //            test.gameObject.SetActive(false);
-    //        }
-
-    //        GameObject[] invPrefabs = GameObject.FindGameObjectsWithTag("InvPrefab");
-    //        foreach(var prefab in invPrefabs)
-    //        {
-    //            DestroyImmediate(prefab);
-    //        }
-    //    }
-    //}
-
 }

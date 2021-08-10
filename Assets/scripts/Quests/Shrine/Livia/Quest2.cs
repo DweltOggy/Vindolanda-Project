@@ -8,7 +8,7 @@ public class Quest2 : Objective
 {
 
     public string info = "Deliver Livia's Pendant to the Tavern Patron";
-    public int reward = 2;
+    public int reward = 20;
 
     public Dialogue tavernDialogue1;
     public Dialogue tavernDialogue2;
@@ -39,7 +39,7 @@ public class Quest2 : Objective
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         NPC recpiant;
-        GameObject NPC = GameObject.FindGameObjectWithTag("ShrineQuest");
+        GameObject NPC = GameObject.FindGameObjectWithTag("TavernPatron");
         if (NPC != null)
         {
             recpiant = NPC.GetComponent<NPC>();
@@ -49,11 +49,6 @@ public class Quest2 : Objective
         }
     }
 
-    public void Awake()
-    {
- 
-        //DontDestroyOnLoad(this.gameObject);
-    }
     public override bool Achieved()
     {
         if (FindObjectOfType<DialogueManger>().currentNPC == "Tavern Patron")

@@ -94,12 +94,12 @@ public class QuizManager : MonoBehaviour
     {
         scoreText.text = score.ToString() + " / " + total.ToString();
 
-        if(((float)score/(float)total) > 0.5)
+        if(((float)score/(float)total) >= 0.66)
         {
             winLossText.text = "You Won this Time!";
             if (objectives.GameController.Instance)
             {
-                Player.Instance.addMoney(reward * objectives.GameController.Instance.quizStage);
+                Player.Instance.addMoney(reward * (objectives.GameController.Instance.quizStage +1));
                 objectives.GameController.Instance.quizStage++;
             }
             
@@ -138,15 +138,12 @@ public class QuizManager : MonoBehaviour
     {
         if(button.GetComponent<Answer>().isCorrect)
         {
-            Debug.Log("correct");
             score++;
             correct();
         }
         else 
-        {
             correct();
-            Debug.Log("wrong");
-        }
+        
     }
 
 }

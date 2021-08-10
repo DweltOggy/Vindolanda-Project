@@ -42,8 +42,8 @@ public class ShopButtons : MonoBehaviour
 
             UIElemant = Instantiate(EntryLayout, new Vector3(0, 130, 0) + (offset * loopcounter++), Quaternion.identity) as GameObject;
             UIElemant.transform.SetParent(Parent.transform, false);
-            UIElemant.AddComponent<access>();
-            UIElemant.GetComponent<access>().item = item;
+            UIElemant.AddComponent<access>().item = item;
+            //UIElemant.GetComponent<access>();
             UIElemant.GetComponentInChildren<Text>().text = item.name + " : " + item.value.ToString();
 
             Button buttonElemant = UIElemant.GetComponentInChildren<Button>();

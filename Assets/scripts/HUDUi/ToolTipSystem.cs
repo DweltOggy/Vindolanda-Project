@@ -18,8 +18,6 @@ public class ToolTipSystem : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-
-        //DontDestroyOnLoad(this.gameObject);
     }
 
     public static void show(string content, string header = "")

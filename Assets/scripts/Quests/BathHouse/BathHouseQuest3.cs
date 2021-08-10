@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class BathHouseQuest3 : Objective
 {
     public string info = "Give the Supplies to Manius";
-    public int reward = 40;
+    public int reward = 50;
 
     public Dialogue Dialogue1;
     public Dialogue Dialogue2;

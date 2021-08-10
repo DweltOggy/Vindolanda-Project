@@ -47,14 +47,6 @@ public class SoundManager : MonoBehaviour
         s.source.Play();
     }
 
-    public void Stop(string Name)
-    {
-        Sound s = Array.Find(sounds, sound => sound.name == Name);
-        if (s == null)
-            return;
-        s.source.Stop();
-    }
-
     public bool alreadyPlaying(string Name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == Name);
@@ -70,7 +62,7 @@ public class SoundManager : MonoBehaviour
         foreach(Sound s in sounds)
         {
             if(s.loop)
-                Stop(s.name);
+                s.source.Stop();
         }
     }
 

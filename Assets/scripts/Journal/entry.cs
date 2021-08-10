@@ -18,8 +18,8 @@ namespace knowledge
         [TextArea(10, 10)]
         public string funFacts;
 
-        public Sprite thumb;// = Resources.Load<Sprite>("lock");
-        public Sprite image;// = Resources.Load<Sprite>("lock");
+        public Sprite thumb;
+        public Sprite image;
 
         public void unlock()
         {

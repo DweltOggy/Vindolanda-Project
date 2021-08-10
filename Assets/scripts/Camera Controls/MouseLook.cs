@@ -10,13 +10,12 @@ public class MouseLook : MonoBehaviour
     public bool MouseEnabled = true;
 
     float xRotation = 0.0f;
-    // Start is called before the first frame update
+    
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(MouseEnabled)

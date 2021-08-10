@@ -20,15 +20,7 @@ public class Player : MonoBehaviour
         addStartQuests();
     }
 
-    void addStartQuests()
-    {     
-        gameObject.AddComponent<FillJournalQuest>();
-        gameObject.AddComponent<MainQuest>();
-        gameObject.AddComponent<Quest1>();
-        gameObject.AddComponent<BarracksQuest1>();
-        gameObject.AddComponent<BathHouseQuest1>();
-        gameObject.AddComponent<TavernQuest1>();
-    }
+ 
 
     void Awake()
     {
@@ -102,5 +94,15 @@ public class Player : MonoBehaviour
         notifier.SetActive(true);
         yield return new WaitForSeconds(delay);
         notifier.SetActive(false);
+    }   
+    
+    void addStartQuests()
+    {     
+        gameObject.AddComponent<FillJournalQuest>();
+        gameObject.AddComponent<MainQuest>();
+        gameObject.AddComponent<Quest1>();
+        gameObject.AddComponent<BarracksQuest1>();
+        gameObject.AddComponent<BathHouseQuest1>();
+        gameObject.AddComponent<TavernQuest1>();
     }
 }

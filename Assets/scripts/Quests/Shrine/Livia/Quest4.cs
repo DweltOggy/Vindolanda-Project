@@ -8,7 +8,7 @@ public class Quest4 : Objective
 {
 
     public string info = "Deliver Livia's Artifact to the bathhouse Patron";
-    public int reward = 2;
+    public int reward = 20;
 
     public Dialogue Dialogue1;
     public Dialogue Dialogue2;

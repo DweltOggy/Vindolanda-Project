@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class ReturnTOMap : MonoBehaviour
 {
@@ -31,7 +30,6 @@ public class ReturnTOMap : MonoBehaviour
 
     void returnToMap()
     {
-        //SceneManager.LoadScene("MapScene");
         LevelLoader.Instance.loadLevel("MapScene");
     }
 }

@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using EasyUI.PopUps;
 using UnityEngine.EventSystems;
 public class SelectObject : MonoBehaviour
 {
