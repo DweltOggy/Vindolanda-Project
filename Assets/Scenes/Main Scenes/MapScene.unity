@@ -397,6 +397,8 @@ MonoBehaviour:
   label: Barracks
   Description: The soldiers living quarters. The soldsiers live, eat and socialise
     here.
+  distance: 20
+  scale: 0.5
   labelPrefab: {fileID: 8593885267609500603, guid: d30e8c16119fca04b855a5ec25b990d8, type: 3}
 --- !u!135 &62980945
 SphereCollider:
@@ -2611,6 +2613,14 @@ PrefabInstance:
     - target: {fileID: 7641672591819943313, guid: 1ebd4b401b927cf48a5f2f1542ddf1c8, type: 3}
       propertyPath: label
       value: Market
+      objectReference: {fileID: 0}
+    - target: {fileID: 7641672591819943313, guid: 1ebd4b401b927cf48a5f2f1542ddf1c8, type: 3}
+      propertyPath: scale
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7641672591819943313, guid: 1ebd4b401b927cf48a5f2f1542ddf1c8, type: 3}
+      propertyPath: distance
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7641672591819943313, guid: 1ebd4b401b927cf48a5f2f1542ddf1c8, type: 3}
       propertyPath: Description
@@ -10003,8 +10013,8 @@ MonoBehaviour:
   speed: 100
   limits: {x: 300, y: 300}
   scrollSpeed: 1000
-  minY: 150
-  maxY: 300
+  minY: 100
+  maxY: 150
   senstivity: 50
 --- !u!4 &969237535 stripped
 Transform:
@@ -12491,6 +12501,8 @@ MonoBehaviour:
   destination: Tavern
   label: Tavern
   Description: The romans come here to eat and enjoy themselves.
+  distance: 20
+  scale: 0.5
   labelPrefab: {fileID: 8593885267609500603, guid: d30e8c16119fca04b855a5ec25b990d8, type: 3}
 --- !u!135 &1126241010
 SphereCollider:
@@ -19314,6 +19326,8 @@ MonoBehaviour:
   label: Bath House
   Description: ' This is the place Where the romans to relax, clean temselves and
     socialise.'
+  distance: 20
+  scale: 0.5
   labelPrefab: {fileID: 8593885267609500603, guid: d30e8c16119fca04b855a5ec25b990d8, type: 3}
 --- !u!135 &1723658781
 SphereCollider:
@@ -24096,6 +24110,14 @@ PrefabInstance:
     - target: {fileID: 7641672591819943313, guid: 1ebd4b401b927cf48a5f2f1542ddf1c8, type: 3}
       propertyPath: label
       value: Temple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7641672591819943313, guid: 1ebd4b401b927cf48a5f2f1542ddf1c8, type: 3}
+      propertyPath: scale
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7641672591819943313, guid: 1ebd4b401b927cf48a5f2f1542ddf1c8, type: 3}
+      propertyPath: distance
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7641672591819943313, guid: 1ebd4b401b927cf48a5f2f1542ddf1c8, type: 3}
       propertyPath: Description

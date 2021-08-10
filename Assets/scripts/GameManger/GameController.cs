@@ -33,13 +33,6 @@ namespace objectives
             DontDestroyOnLoad(this.gameObject);
         }
 
-
-        public void removeString(string A)
-        {
-            value.text.Replace(A, string.Empty);
-        }
-
-
         void Update()
         {
             refresh();
@@ -58,6 +51,10 @@ namespace objectives
                 }
             }
             percentage.text = "Journal (J) \n" + Encyclopedia.Instance.percentageComplete() + "%";
+            //if(Input.GetKeyDown(KeyCode.Escape))
+            //{
+            //    LevelLoader.Instance.loadLevel("StartScene");
+            //}
         }
 
         public void refresh()

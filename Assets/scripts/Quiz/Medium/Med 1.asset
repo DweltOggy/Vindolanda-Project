@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30f2ef973c9776f4b929196b9ef7ace0, type: 3}
+  m_Name: Med 1
+  m_EditorClassIdentifier: 
+  question: 'Why did women own more jewellery than men? '
+  answers:
+  - 'They liked them better '
+  - 'They thought they were pretty '
+  - "They were allowed to keep them separate from their husband\u2019s wealth "
+  - 'Because men were not allowed to wear jewellery '
+  CorrectAnswer: 3
