@@ -19,8 +19,6 @@ public class TavernQuest2 : Objective
         delivery = dialogueStore.key;
         Dialogue1 = dialogueStore.TavernQuest1;
         Dialogue2 = dialogueStore.TavernQuest2;
-
-        //DontDestroyOnLoad(this);
     }
     public override bool Achieved()
     {
@@ -39,7 +37,6 @@ public class TavernQuest2 : Objective
     {
         Player.Instance.addItem(delivery);
         knowledge.Encyclopedia.Instance.unlockEntry(delivery.databaseEntry);
-        //FindObjectOfType<EcycloUIManager>().updateUI();
         Player.Instance.addMoney(reward);
         if (!Player.Instance.gameObject.GetComponent<TavernQuest3>())
         {

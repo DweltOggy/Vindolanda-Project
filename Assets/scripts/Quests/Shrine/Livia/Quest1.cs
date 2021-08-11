@@ -10,11 +10,10 @@ public class Quest1  : Objective
     public string info = "Talk to Livia Pola in the Temple";
     public int reward = 2;
     public itemObject delivery;
-
-
     public Dialogue Dialogue1;
     public Dialogue Dialogue2;
-    private void Start()
+
+    public void Awake()
     {
         QuestDialogues dialogueStore = FindObjectOfType<QuestDialogues>();
 
@@ -22,15 +21,7 @@ public class Quest1  : Objective
         Dialogue2 = dialogueStore.quest1Dialogue2;
 
         setDialogue();
-    }
-
-    public void Awake()
-    {
-        QuestDialogues dialogueStore = FindObjectOfType<QuestDialogues>();
-
         delivery = dialogueStore.pendant;
-
-        DontDestroyOnLoad(this);
     }
     public override bool Achieved()
     {
