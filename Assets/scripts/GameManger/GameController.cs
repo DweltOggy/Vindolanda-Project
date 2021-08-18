@@ -51,6 +51,10 @@ namespace objectives
                 }
             }
             percentage.text = "Journal (J) \n" + Encyclopedia.Instance.percentageComplete() + "%";
+            if(Input.GetKeyDown(KeyCode.Escape))
+            {
+                LevelLoader.Instance.exitGame();
+            }
         }
 
         public void refresh()
